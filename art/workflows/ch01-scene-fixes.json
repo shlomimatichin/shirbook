@@ -1,0 +1,626 @@
+{
+  "id": "64a7d0c1-1480-41ed-9a2d-19a5a39fac31",
+  "revision": 0,
+  "last_node_id": 3172,
+  "last_link_id": 3181,
+  "nodes": [
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Use reference ONLY for Shir likeness/outfit, NOT layout. Create portrait premium painterly digital drawing. Blue eyes, honey blonde scalp-apex bun, lilac shirt, rose shorts, pink black sport sandals, pink backpack. Backpack print appears only when rear panel faces camera: rear torso views MUST show the three HUNTR/X girls; front torso views hide print and show plain side/straps. Natural nine-year-old proportions, no oversized head. Upper 33 percent quiet pale background for reading text; main action 35\u201386 percent, bottom 10 percent unimportant ground. No text, no dragon. Morning daylight. Birthday morning at home. Shir happily adjusts pink backpack straps, front-facing smile, modest birthday balloon behind her in ordinary bright modern interior. Plain rectangular apartment door with straight top, dark modern flat panel. NO arched wooden gate, no garden, no old brass handle. Shoulder/waist portrait and normal small head. Different location from secret garden.",
+        6101,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page01-scene-fix"
+      ]
+    },
+    {
+      "id": 1170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        2000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        2000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 1180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Use reference ONLY for Shir likeness/outfit, NOT layout. Create portrait premium painterly digital drawing. Blue eyes, honey blonde scalp-apex bun, lilac shirt, rose shorts, pink black sport sandals, pink backpack. Backpack print appears only when rear panel faces camera: rear torso views MUST show the three HUNTR/X girls; front torso views hide print and show plain side/straps. Natural nine-year-old proportions, no oversized head. Upper 33 percent quiet pale background for reading text; main action 35\u201386 percent, bottom 10 percent unimportant ground. No text, no dragon. Morning daylight. Shir rear three-quarter stands before CLOSED old arched wooden gate in modern pale panel urban wall, intercom left, brass curved handle on left edge of door, hinges right. Gate width/height about .60, Shir nearly same height as opening at 92 percent, not tiny. Two pedestrians walk past ignoring door. Her backpack REAR faces viewer so the three colorful HUNTR/X girls MUST be printed on rear pocket panel, matching reference rear view. Ordinary morning street, no garden reveal.",
+        6107,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        2000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page07-scene-fix"
+      ]
+    },
+    {
+      "id": 2170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        3000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        3000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 2180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Use reference ONLY for Shir likeness/outfit, NOT layout. Create portrait premium painterly digital drawing. Blue eyes, honey blonde scalp-apex bun, lilac shirt, rose shorts, pink black sport sandals, pink backpack. Backpack print appears only when rear panel faces camera: rear torso views MUST show the three HUNTR/X girls; front torso views hide print and show plain side/straps. Natural nine-year-old proportions, no oversized head. Upper 33 percent quiet pale background for reading text; main action 35\u201386 percent, bottom 10 percent unimportant ground. No text, no dragon. Morning daylight. Shir paused mid-step on a completely ordinary city sidewalk, listening to unseen tiny bell, puzzled upward glance. Plain modern apartment wall and trees, NO DOOR, NO GATE, no bell, no garden. Do not introduce the secret door before page6.",
+        6104,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 2172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        3000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page04-scene-fix"
+      ]
+    },
+    {
+      "id": 3170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        4000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        4000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 3180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Use reference ONLY for Shir likeness/outfit, NOT layout. Create portrait premium painterly digital drawing. Blue eyes, honey blonde scalp-apex bun, lilac shirt, rose shorts, pink black sport sandals, pink backpack. Backpack print appears only when rear panel faces camera: rear torso views MUST show the three HUNTR/X girls; front torso views hide print and show plain side/straps. Natural nine-year-old proportions, no oversized head. Upper 33 percent quiet pale background for reading text; main action 35\u201386 percent, bottom 10 percent unimportant ground. No text, no dragon. Morning daylight. Shir INSIDE a lush peaceful garden, looking up at golden light on ordinary green tree leaves. Medium three-quarter portrait with surrounding foliage and winding stone path. NO DOOR OR GATE anywhere in frame, no urban wall, no doorway pose, no egg. Magic conveyed through golden haze and leaf light only.",
+        6113,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        4000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page13-scene-fix"
+      ]
+    }
+  ],
+  "links": [
+    [
+      180,
+      170,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ],
+    [
+      1180,
+      1170,
+      0,
+      1171,
+      0,
+      "IMAGE"
+    ],
+    [
+      1181,
+      1171,
+      0,
+      1172,
+      0,
+      "IMAGE"
+    ],
+    [
+      2180,
+      2170,
+      0,
+      2171,
+      0,
+      "IMAGE"
+    ],
+    [
+      2181,
+      2171,
+      0,
+      2172,
+      0,
+      "IMAGE"
+    ],
+    [
+      3180,
+      3170,
+      0,
+      3171,
+      0,
+      "IMAGE"
+    ],
+    [
+      3181,
+      3171,
+      0,
+      3172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}
