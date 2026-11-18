@@ -1,0 +1,38 @@
+{
+  "cover": {
+    "approved": true,
+    "path": "art/references/cover.webp",
+    "reviewed_by": "production agent",
+    "review": "No dragon; scalp-apex bun, honey/dark-blonde hair, lilac shirt, dusty-rose shorts, thin tan ankle-strap sandals. Matches latest reference direction; typography remains real HTML."
+  },
+  "shir_reference": {
+    "approved": true,
+    "path": "art/references/shir-reference.webp",
+    "reviewed_by": "owner (identity/proportions) and production agent (requested appearance update)",
+    "review": "Owner approved balanced likeness. Applied subsequent requested lighter honey/dark-blonde hair, dusty-rose shorts and thin tan ankle-strap sandals; checked all three views."
+  },
+  "skitters_hatchling": {
+    "approved": true,
+    "path": "art/references/skitters-hatchling.webp",
+    "review": "Owner approved dragon design and accepted light turquoise revision. Production QA checked stage, palette and anatomy; hatchling horn buds corrected.",
+    "reviewed_by": "production agent"
+  },
+  "skitters_baby": {
+    "approved": true,
+    "path": "art/references/skitters-baby.webp",
+    "review": "Owner approved dragon design and accepted light turquoise revision. Production QA checked stage, palette and anatomy; hatchling horn buds corrected.",
+    "reviewed_by": "production agent"
+  },
+  "skitters_adolescent": {
+    "approved": true,
+    "path": "art/references/skitters-adolescent.webp",
+    "review": "Owner approved dragon design and accepted light turquoise revision. Production QA checked stage, palette and anatomy; hatchling horn buds corrected.",
+    "reviewed_by": "production agent"
+  },
+  "skitters_adult": {
+    "approved": true,
+    "path": "art/references/skitters-adult.webp",
+    "review": "Owner approved dragon design and accepted light turquoise revision. Production QA checked stage, palette and anatomy; hatchling horn buds corrected.",
+    "reviewed_by": "production agent"
+  }
+}

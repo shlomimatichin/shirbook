@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e9e2d3">
+  <meta name="description" content="Shir’s Secret — an illustrated adventure, one little page at a time. A book for beginning English readers.">
+  <title>Shir’s Secret</title>
+  <link rel="stylesheet" href="book.css">
+  <script src="book.js" defer></script>
+</head>
+<body>
+<main class="reader" aria-label="Shir’s Secret book">
+  <div class="book" id="book">
+    <section class="page cover is-active" id="cover" aria-labelledby="book-title">
+      <img class="cover-art" src="assets/cover-960.webp" srcset="assets/cover-480.webp 480w, assets/cover-960.webp 960w, assets/cover-1600.webp 1600w" sizes="(max-height: 700px) 390px, (min-width: 720px) 620px, 100vw" alt="Shir opens a little garden gate. Golden light shines along a secret path under the evening stars." width="1696" height="2528" fetchpriority="high">
+      <div class="cover-heading"><p class="eyebrow">A LITTLE READING. A LITTLE WONDER.</p><h1 id="book-title" tabindex="-1">Shir’s<br><em>Secret</em></h1><span class="star" aria-hidden="true">✦</span></div>
+    </section>
+    <section class="page contents" id="chapters" aria-labelledby="chapter-title" aria-hidden="true" inert>
+      <div class="page-content">
+        <p class="running-title">SHIR’S SECRET</p>
+        <span class="ornament" aria-hidden="true">✦</span>
+        <h2 id="chapter-title" tabindex="-1">Our story<br>begins…</h2>
+        <div class="rule" aria-hidden="true"></div>
+        <article class="chapter-card" aria-labelledby="chapter-one"><span class="chapter-number" aria-hidden="true">01</span><div><h3 id="chapter-one">Chapter 1</h3><p>The story is on its way.</p><span class="status">Coming soon</span></div></article>
+        <p class="page-footer">One page at a time.</p>
+        <span class="folio" aria-hidden="true">1</span>
+      </div>
+    </section>
+  </div>
+  <nav class="reader-nav" aria-label="Turn the page">
+    <a class="turn-control previous" id="previous" href="#cover" aria-label="Back to the cover" hidden><span aria-hidden="true">←</span> Cover</a>
+    <span class="page-indicator" id="page-indicator" aria-live="polite">The cover</span>
+    <a class="turn-control next" id="next" href="#chapters">Open the book <span aria-hidden="true">→</span></a>
+  </nav>
+  <noscript><p class="no-script">Enable JavaScript to turn the pages. Chapter 1 is coming soon.</p></noscript>
+</main>
+</body>
+</html>

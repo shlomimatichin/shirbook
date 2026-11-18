@@ -1,0 +1,324 @@
+{
+  "id": "e5da985f-cf9d-44ac-b763-44d436637b10",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_shir-honey-rose-reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 80
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Make THREE owner-requested appearance changes to Shir in this illustration. 1. HAIR: lighten her brown hair to warm HONEY LIGHT BROWN / DARK BLONDE, with natural golden blonde highlights. A little more blonde, not platinum or yellow; preserve hair texture and the small loose bun at the scalp's highest point. 2. SHORTS: replace all green shorts fabric with muted DUSTY ROSE / SOFT WARM PINK (approximately #C98991). Keep the exact same modest above-knee shorts cut, pockets and seams. Keep the dusty lilac T-shirt and golden yellow backpack unchanged. 3. SANDALS: replace the chunky wide-strap slip-on sandals with delicate TAN LEATHER THIN-STRAP SANDALS WITH AN ANKLE STRAP. Narrow straps, a small ankle buckle, thin flat soles, toes visible. No thick Birkenstock-like bands, no chunky soles, no socks. Keep her exact recognizable face, blue eyes, warm smile, approved head/body proportions, pose, drawing style and all other details unchanged. Apply all three changes consistently across ALL THREE reference views. Preserve the accepted head sizes and bun positions in every view. The sandals must have a thin strap near the toes, a thin diagonal instep strap, a thin strap around the ankle and a heel-retaining strap; show correct ankle strap continuity in side and rear views.",
+        3500,
+        "fixed",
+        "high",
+        "opaque",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1024,
+        1024
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/shir-honey-rose-reference"
+      ]
+    },
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_cover-honey-rose.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Make THREE owner-requested appearance changes to Shir in this illustration. 1. HAIR: lighten her brown hair to warm HONEY LIGHT BROWN / DARK BLONDE, with natural golden blonde highlights. A little more blonde, not platinum or yellow; preserve hair texture and the small loose bun at the scalp's highest point. 2. SHORTS: replace all green shorts fabric with muted DUSTY ROSE / SOFT WARM PINK (approximately #C98991). Keep the exact same modest above-knee shorts cut, pockets and seams. Keep the dusty lilac T-shirt and golden yellow backpack unchanged. 3. SANDALS: replace the chunky wide-strap slip-on sandals with delicate TAN LEATHER THIN-STRAP SANDALS WITH AN ANKLE STRAP. Narrow straps, a small ankle buckle, thin flat soles, toes visible. No thick Birkenstock-like bands, no chunky soles, no socks. Keep her exact recognizable face, blue eyes, warm smile, approved head/body proportions, pose, drawing style and all other details unchanged. Preserve the entire beautiful garden cover scene, gate, light, flowers, title space and pose unchanged. Keep her bun on the top apex of the scalp exactly as it currently is. Show the thin ankle straps clearly on both feet. No letters, no dragons, no eggs.",
+        3501,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/cover-honey-rose"
+      ]
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      180,
+      170,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

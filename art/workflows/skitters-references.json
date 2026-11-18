@@ -1,0 +1,1078 @@
+{
+  "id": "eb02f855-af6b-4ae4-93eb-3e4cffb82a3a",
+  "revision": 0,
+  "last_node_id": 500,
+  "last_link_id": 500,
+  "nodes": [
+    {
+      "id": 101,
+      "type": "LoadImage",
+      "pos": [
+        1000,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            160
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-hatchling_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 102,
+      "type": "LoadImage",
+      "pos": [
+        1250,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            161
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-hatchling_1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 120,
+      "type": "BatchImagesNode",
+      "pos": [
+        1000,
+        -300
+      ],
+      "size": [
+        225,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 160
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 161
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            150
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 130,
+      "type": "GeminiImage2Node",
+      "pos": [
+        1000,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 150
+        },
+        {
+          "name": "files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            151
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GeminiImage2Node",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Recolor reference image ONE, the three-view hatchling dragon sheet. Keep every pose, proportion, face, horn size, wing size, tail, four legs, two wings and drawing exactly the same as image ONE. Image TWO supplies ONLY the new light turquoise body palette for Skitters. Change all moss-green/teal body scales in image ONE to light luminous turquoise approximately #86DAD4, with soft aqua highlights and turquoise shadows. Preserve warm butter-yellow belly, apricot wing membranes, amber eyes, ivory horns, golden forehead star, cream background and professional painterly digital drawing. All three views represent the SAME hatchling age, not a growth sequence. Do not add features or borrow another age from image TWO. No text, no labels.",
+        "gemini-3-pro-image-preview",
+        2011,
+        "fixed",
+        "3:2",
+        "2K",
+        "IMAGE",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 140,
+      "type": "SaveImage",
+      "pos": [
+        1450,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 151
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/skitters-hatchling"
+      ]
+    },
+    {
+      "id": 201,
+      "type": "LoadImage",
+      "pos": [
+        2000,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            260
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-baby_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 202,
+      "type": "LoadImage",
+      "pos": [
+        2250,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            261
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-baby_1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 220,
+      "type": "BatchImagesNode",
+      "pos": [
+        2000,
+        -300
+      ],
+      "size": [
+        225,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 260
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 261
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            250
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 230,
+      "type": "GeminiImage2Node",
+      "pos": [
+        2000,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 250
+        },
+        {
+          "name": "files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            251
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GeminiImage2Node",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Recolor reference image ONE, the three-view baby dragon sheet. Keep every pose, proportion, face, horn size, wing size, tail, four legs, two wings and drawing exactly the same as image ONE. Image TWO supplies ONLY the new light turquoise body palette for Skitters. Change all moss-green/teal body scales in image ONE to light luminous turquoise approximately #86DAD4, with soft aqua highlights and turquoise shadows. Preserve warm butter-yellow belly, apricot wing membranes, amber eyes, ivory horns, golden forehead star, cream background and professional painterly digital drawing. All three views represent the SAME baby age, not a growth sequence. Do not add features or borrow another age from image TWO. No text, no labels.",
+        "gemini-3-pro-image-preview",
+        2012,
+        "fixed",
+        "3:2",
+        "2K",
+        "IMAGE",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 240,
+      "type": "SaveImage",
+      "pos": [
+        2450,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 251
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/skitters-baby"
+      ]
+    },
+    {
+      "id": 301,
+      "type": "LoadImage",
+      "pos": [
+        3000,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            360
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-adolescent_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 302,
+      "type": "LoadImage",
+      "pos": [
+        3250,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            361
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-adolescent_1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 320,
+      "type": "BatchImagesNode",
+      "pos": [
+        3000,
+        -300
+      ],
+      "size": [
+        225,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 360
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 361
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            350
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 330,
+      "type": "GeminiImage2Node",
+      "pos": [
+        3000,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 350
+        },
+        {
+          "name": "files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            351
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GeminiImage2Node",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Recolor reference image ONE, the three-view adolescent dragon sheet. Keep every pose, proportion, face, horn size, wing size, tail, four legs, two wings and drawing exactly the same as image ONE. Image TWO supplies ONLY the new light turquoise body palette for Skitters. Change all moss-green/teal body scales in image ONE to light luminous turquoise approximately #86DAD4, with soft aqua highlights and turquoise shadows. Preserve warm butter-yellow belly, apricot wing membranes, amber eyes, ivory horns, golden forehead star, cream background and professional painterly digital drawing. All three views represent the SAME adolescent age, not a growth sequence. Do not add features or borrow another age from image TWO. No text, no labels.",
+        "gemini-3-pro-image-preview",
+        2013,
+        "fixed",
+        "3:2",
+        "2K",
+        "IMAGE",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 340,
+      "type": "SaveImage",
+      "pos": [
+        3450,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 351
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/skitters-adolescent"
+      ]
+    },
+    {
+      "id": 401,
+      "type": "LoadImage",
+      "pos": [
+        4000,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            460
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-adult_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 402,
+      "type": "LoadImage",
+      "pos": [
+        4250,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            461
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_skitters-adult_1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 420,
+      "type": "BatchImagesNode",
+      "pos": [
+        4000,
+        -300
+      ],
+      "size": [
+        225,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 460
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 461
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            450
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 430,
+      "type": "GeminiImage2Node",
+      "pos": [
+        4000,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 450
+        },
+        {
+          "name": "files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            451
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GeminiImage2Node",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Recolor reference image ONE, the three-view adult dragon sheet. Keep every pose, proportion, face, horn size, wing size, tail, four legs, two wings and drawing exactly the same as image ONE. Image TWO supplies ONLY the new light turquoise body palette for Skitters. Change all moss-green/teal body scales in image ONE to light luminous turquoise approximately #86DAD4, with soft aqua highlights and turquoise shadows. Preserve warm butter-yellow belly, apricot wing membranes, amber eyes, ivory horns, golden forehead star, cream background and professional painterly digital drawing. All three views represent the SAME adult age, not a growth sequence. Do not add features or borrow another age from image TWO. No text, no labels.",
+        "gemini-3-pro-image-preview",
+        2014,
+        "fixed",
+        "3:2",
+        "2K",
+        "IMAGE",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 440,
+      "type": "SaveImage",
+      "pos": [
+        4450,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 451
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/skitters-adult"
+      ]
+    }
+  ],
+  "links": [
+    [
+      160,
+      101,
+      0,
+      120,
+      0,
+      "IMAGE"
+    ],
+    [
+      161,
+      102,
+      0,
+      120,
+      1,
+      "IMAGE"
+    ],
+    [
+      150,
+      120,
+      0,
+      130,
+      0,
+      "IMAGE"
+    ],
+    [
+      151,
+      130,
+      0,
+      140,
+      0,
+      "IMAGE"
+    ],
+    [
+      260,
+      201,
+      0,
+      220,
+      0,
+      "IMAGE"
+    ],
+    [
+      261,
+      202,
+      0,
+      220,
+      1,
+      "IMAGE"
+    ],
+    [
+      250,
+      220,
+      0,
+      230,
+      0,
+      "IMAGE"
+    ],
+    [
+      251,
+      230,
+      0,
+      240,
+      0,
+      "IMAGE"
+    ],
+    [
+      360,
+      301,
+      0,
+      320,
+      0,
+      "IMAGE"
+    ],
+    [
+      361,
+      302,
+      0,
+      320,
+      1,
+      "IMAGE"
+    ],
+    [
+      350,
+      320,
+      0,
+      330,
+      0,
+      "IMAGE"
+    ],
+    [
+      351,
+      330,
+      0,
+      340,
+      0,
+      "IMAGE"
+    ],
+    [
+      460,
+      401,
+      0,
+      420,
+      0,
+      "IMAGE"
+    ],
+    [
+      461,
+      402,
+      0,
+      420,
+      1,
+      "IMAGE"
+    ],
+    [
+      450,
+      420,
+      0,
+      430,
+      0,
+      "IMAGE"
+    ],
+    [
+      451,
+      430,
+      0,
+      440,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

@@ -1,0 +1,229 @@
+{
+  "id": "408dfb2f-94fd-4c2c-b362-f9a0ca9cb4b1",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 101,
+      "type": "LoadImage",
+      "pos": [
+        1000,
+        -800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            160
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_finish_cover-final-b_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 120,
+      "type": "BatchImagesNode",
+      "pos": [
+        1000,
+        -300
+      ],
+      "size": [
+        225,
+        120
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 160
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            150
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 130,
+      "type": "GeminiImage2Node",
+      "pos": [
+        1000,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 150
+        },
+        {
+          "name": "files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            151
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GeminiImage2Node",
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1"
+      },
+      "widgets_values": [
+        "Create a finished high-end children's storybook COVER ILLUSTRATION for Shir's Secret. Portrait 2:3. The supplied character sheet defines the EXACT identity, face, BLUE eyes, brown forward topknot, dusty lilac shirt, green shorts, golden yellow backpack and tan open-toed sandals of Shir, age nine. Preserve her joyful recognizable face and age-appropriate proportions. Premium digital drawing with confident delicate contours, nuanced gouache brushwork, paper texture and rich luminous color. A single seamless scene. At twilight, Shir discovers a half-open old wooden gate in a low stone garden wall. A winding path disappears into the secret garden. Warm honey-gold light beyond the gate illuminates the stones, flowers and one side of her face. Deep midnight petrol-blue, soft turquoise and moss foliage with restrained apricot highlights. A few tiny fireflies and one small star in the sky. Emotion: invitation, gentle mystery and warmth. Not scary. Do not reveal the secret. Absolutely NO DRAGON, no dragon silhouettes, no eggs, no other people, no lettering or title baked into the image. Organic foliage frames the outer edges, never a rigid rectangular frame. Upper 38 percent is quiet dark twilight sky/soft foliage to receive large pale title lettering later; no bright objects or faces there. Keep Shir's complete figure and bun below that quiet title area, clearly readable with breathing room, no cropped feet. A full artistic composition, not a character sheet. No panels, seams, borders, watermarks, plastic 3D rendering or photographic textures. More intimate storybook composition: Shir stands at the left side of the slightly open gate in the lower half, seen in gentle three-quarter view. She looks toward us with a bright welcoming smile, one hand resting naturally on the gate. The winding golden path curves from bottom center toward the right behind her. A few cream flowers grow beside weathered stone, delicate fern silhouettes on the edges. Make Shir larger and more readable than the environment, but leave the upper 38 percent quiet and dark. Painterly evening atmosphere and elegant asymmetry.",
+        "gemini-3-pro-image-preview",
+        2011,
+        "fixed",
+        "2:3",
+        "2K",
+        "IMAGE",
+        "You are an expert image-generation engine. You must ALWAYS produce an image.\nInterpret all user input\u2014regardless of format, intent, or abstraction\u2014as literal visual directives for image composition.\nIf a prompt is conversational or lacks specific visual details, you must creatively invent a concrete visual scenario that depicts the concept.\nPrioritize generating the visual representation above any text, formatting, or conversational requests."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 140,
+      "type": "SaveImage",
+      "pos": [
+        1450,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 151
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/cover-final-b"
+      ]
+    }
+  ],
+  "links": [
+    [
+      160,
+      101,
+      0,
+      120,
+      0,
+      "IMAGE"
+    ],
+    [
+      150,
+      120,
+      0,
+      130,
+      0,
+      "IMAGE"
+    ],
+    [
+      151,
+      130,
+      0,
+      140,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

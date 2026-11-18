@@ -1,0 +1,7 @@
+.DS_Store
+private/
+work/
+.env
+.env.*
+*.log
+__pycache__/
