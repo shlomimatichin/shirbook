@@ -1,0 +1,3363 @@
+{
+  "id": "9b9ea5db-cb9d-4b5a-9965-ed9b9420bcc8",
+  "revision": 0,
+  "last_node_id": 12075,
+  "last_link_id": 12083,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 83
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Birthday morning at home. Medium three-quarter portrait of Shir happily fastening pink backpack shoulder strap, ready for first independent walk. Modest bright modern home entrance, small ordinary birthday balloon in far background, no writing or numbers. Confident delighted expression. Shirt front faces viewer: rear print hidden. NO secret garden door here.",
+        6001,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page01-full"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            82
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1900
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 1083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Wide street scene: Shir walks along usual sidewalk just past a clearly marked pedestrian crosswalk, in calm modern Israeli neighborhood of tall apartment buildings. Seen rear three-quarter, pink printed backpack naturally visible. Cars stopped back from crossing, ordinary urban details. School morning, cheerful independent stride. No secret gate visible yet.",
+        6003,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1900
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page03-full"
+      ]
+    },
+    {
+      "id": 1074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        1600
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 1080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 1082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        2800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        2800
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 2083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Medium full-body street scene. Shir suddenly pauses mid-step, head tilted to listen to unseen tiny bell. One sandal poised, curious puzzled face. Ordinary pale apartment facade and pavement; no bell visible, no magical door reveal yet. Camera front three-quarter, bag print hidden. Quiet expectant composition.",
+        6004,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 2072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        2800
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page04-full"
+      ]
+    },
+    {
+      "id": 2074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        2800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        2500
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 2080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 2082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        3700
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        3700
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 3083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Wide observational street scene. Shir stops and looks around trying to locate unseen bell. In background a car passes safely along road and a woman walks her dog on sidewalk, both unconcerned. Shir curious and puzzled, no bell visible, no gate reveal yet. Camera side/front three-quarter; only bag side and straps visible.",
+        6005,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        3700
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page05-full"
+      ]
+    },
+    {
+      "id": 3074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        3700
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        3400
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 3080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 3082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 4070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        4600
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        4600
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 4083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. First strange door discovery: Shir in foreground left rear-three-quarter studies CLOSED old arched wooden door in contemporary pale building facade. Clear ordinary buildings, intercom and modern panels make door incongruous. Door same narrow width/height ratio and modest size as cover, Shir about 92 percent opening height. No garden visible because door fully shut. Rear backpack can naturally show print. Wide storytelling framing.",
+        6006,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        4600
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 4081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page06-full"
+      ]
+    },
+    {
+      "id": 4074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        4600
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        4300
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 4080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 4082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        5500
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        5500
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 5083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Same CLOSED old wooden door and modern wall. Shir stands still watching it, rear three-quarter. Two ordinary pedestrians walk past on sidewalk without looking toward door or Shir, continuing their routine. Do not make door transparent/invisible; mystery is unnoticed. Consistent cover-scale gate, no garden visible. Social contrast and curiosity.",
+        6007,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 5072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        5500
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page07-full"
+      ]
+    },
+    {
+      "id": 5074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        5500
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        5200
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 5080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 5082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        6400
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 6071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        6400
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 6083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Closer three-quarter view at same CLOSED wooden door. Shir takes a small step closer and startles at an unseen bell: shoulders slightly lifted, eyes widened, one hand near chest. She looks toward door with curious surprise, not terror. No bell visible. Front torso visible means backpack rear print hidden. Same gate/wall construction.",
+        6008,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 6072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        6400
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page08-full"
+      ]
+    },
+    {
+      "id": 6074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        6400
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 6075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        6100
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 6080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 6082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        7300
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 7071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        7300
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 7083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Close-up story action at SAME closed old wooden door: Shir hand grips brass curved handle and tries pulling, other hand gently on wooden panel. Include her focused side-profile face and upper body so action clear, not detached hands. Door remains fully closed, no light gap. Pink backpack side only. Carefully correct fingers and handle geometry, wood grain and modern wall sliver. Not two actions/duplicate arms.",
+        6009,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 7072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        7300
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page09-full"
+      ]
+    },
+    {
+      "id": 7074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        7300
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 7075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        7000
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 7080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 7082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 8070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        8200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 8071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        8200
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 8083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Medium shot at SAME still-closed door. Shir gives a small wry amused smile and raised eyebrow, as if saying well happy birthday to me. One hand resting on brass handle, relaxed comic frustration. No birthday symbols, no text, no magical key. Latch subtly just released but door not yet visibly wide open. Side/front view, bag print hidden. Gentle character humor.",
+        6010,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 8072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        8200
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page10-full"
+      ]
+    },
+    {
+      "id": 8074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        8200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 8075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        7900
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 8080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 8082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        9100
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 9071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        9100
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 9083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Medium shot: same old wooden door now opens only a NARROW crack, warm golden light through gap. Shir still holds handle and leans toward opening, surprised listening expression. Bell unseen. Keep door largely closed; no full garden reveal yet. Same physical gate as cover, modern exterior daylight. Front/side torso, plain bag side and straps only.",
+        6011,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 9072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        9100
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page11-full"
+      ]
+    },
+    {
+      "id": 9074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        9100
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_gate.png",
+        "image"
+      ]
+    },
+    {
+      "id": 9075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        8800
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 9080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 9082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 10070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 10071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        10000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 10083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Inside luminous garden, medium side view of Shir gazing around in wonder. Ordinary lush green leaves, trees, stone path; golden diffuse sunlight and soft haze make air feel unusual, no fantasy flowers or beings. Modern city noise visually distant, peaceful spacious garden. Keep garden style of image2. Shir front/side means printed bag panel hidden. No egg yet. Focus on leaf light and her quiet amazement.",
+        6013,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 10072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        10000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page13-full"
+      ]
+    },
+    {
+      "id": 10074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 10075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        9700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 10080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 10082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 11071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        10900
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 11083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. At open garden threshold, Shir hesitates before stepping inside. Rear three-quarter body toward garden but head turned toward urban street with thoughtful worried expression, one foot just crossing threshold. Emotional conflict curiosity versus danger and lateness; no exaggerated panic. Show bright ordinary city beyond edge and warm garden within. No clocks/text or duplicated person. Same cover-proportioned doorway. Pink bag rear print only if rear panel faces camera.",
+        6014,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 11072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        10900
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 11081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page14-full"
+      ]
+    },
+    {
+      "id": 11074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 11075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        10600
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 11080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 11082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        11800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_identity.png",
+        "image"
+      ]
+    },
+    {
+      "id": 12071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        11800
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 12083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "One premium painterly digital-drawing illustrated book page, portrait. Image 1 is canonical Shir identity, wardrobe, and correct proportions; image 2 is location/style/scale reference, not a pose to copy. Nine-year-old girl with blue eyes, recognizable happy face, honey dark-blonde scalp-apex bun, lilac tee, dusty-rose shorts, pink patterned fabric sport sandals with black soles. Pink school backpack: print of three HUNTR/X girls exists ONLY on broad REAR panel. With front-facing torso show only straps and narrow plain pink side; never rotate rear panel to expose print. Correct occlusion is more important than visible artwork. Head/body proportions natural, not chibi. Daytime morning, cool neutral urban light versus warm golden garden glow. Consistent modern Israeli neighborhood with pale apartment buildings. Door scenes: same single old arched wooden door in modern pale panel wall, brass handle, hinges at right, intercom left, wall sconces. Match cover door width/height and Shir nearly opening height; NOT tiny child at gigantic gate. Reserve upper 32 percent quiet pale low-detail background for 4-6 short lines of HTML text; NO generated lettering, symbols or text. Essential story action center 35-87 percent height; bottom 10 percent expendable ground only, no feet or props. Keep key subjects in central 75 percent width for phone crop. No dragon, egg except explicitly requested, fantasy beings, sparkles shaped like creatures, or collage. Carefully drawn hands with correct fingers. Garden interior: Shir walking along stone path suddenly stops beside a dense low green bush, head turning toward hidden clicking sound behind it. Bush fills right middle ground concealing whatever is there. Curious alert posture, face in side profile, hands relaxed. Do NOT show egg or creature at all; preserve final-page reveal. Golden garden light, ordinary foliage, consistent with page12. Bag perspective physically correct.",
+        6015,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        11800
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 12081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-page15-full"
+      ]
+    },
+    {
+      "id": 12074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        11800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch01_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 12075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        11500
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 12080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 12082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      74,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      75,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      1080,
+      1070,
+      0,
+      1075,
+      0,
+      "IMAGE"
+    ],
+    [
+      1082,
+      1074,
+      0,
+      1075,
+      1,
+      "IMAGE"
+    ],
+    [
+      1083,
+      1075,
+      0,
+      1071,
+      0,
+      "IMAGE"
+    ],
+    [
+      1081,
+      1071,
+      0,
+      1072,
+      0,
+      "IMAGE"
+    ],
+    [
+      2080,
+      2070,
+      0,
+      2075,
+      0,
+      "IMAGE"
+    ],
+    [
+      2082,
+      2074,
+      0,
+      2075,
+      1,
+      "IMAGE"
+    ],
+    [
+      2083,
+      2075,
+      0,
+      2071,
+      0,
+      "IMAGE"
+    ],
+    [
+      2081,
+      2071,
+      0,
+      2072,
+      0,
+      "IMAGE"
+    ],
+    [
+      3080,
+      3070,
+      0,
+      3075,
+      0,
+      "IMAGE"
+    ],
+    [
+      3082,
+      3074,
+      0,
+      3075,
+      1,
+      "IMAGE"
+    ],
+    [
+      3083,
+      3075,
+      0,
+      3071,
+      0,
+      "IMAGE"
+    ],
+    [
+      3081,
+      3071,
+      0,
+      3072,
+      0,
+      "IMAGE"
+    ],
+    [
+      4080,
+      4070,
+      0,
+      4075,
+      0,
+      "IMAGE"
+    ],
+    [
+      4082,
+      4074,
+      0,
+      4075,
+      1,
+      "IMAGE"
+    ],
+    [
+      4083,
+      4075,
+      0,
+      4071,
+      0,
+      "IMAGE"
+    ],
+    [
+      4081,
+      4071,
+      0,
+      4072,
+      0,
+      "IMAGE"
+    ],
+    [
+      5080,
+      5070,
+      0,
+      5075,
+      0,
+      "IMAGE"
+    ],
+    [
+      5082,
+      5074,
+      0,
+      5075,
+      1,
+      "IMAGE"
+    ],
+    [
+      5083,
+      5075,
+      0,
+      5071,
+      0,
+      "IMAGE"
+    ],
+    [
+      5081,
+      5071,
+      0,
+      5072,
+      0,
+      "IMAGE"
+    ],
+    [
+      6080,
+      6070,
+      0,
+      6075,
+      0,
+      "IMAGE"
+    ],
+    [
+      6082,
+      6074,
+      0,
+      6075,
+      1,
+      "IMAGE"
+    ],
+    [
+      6083,
+      6075,
+      0,
+      6071,
+      0,
+      "IMAGE"
+    ],
+    [
+      6081,
+      6071,
+      0,
+      6072,
+      0,
+      "IMAGE"
+    ],
+    [
+      7080,
+      7070,
+      0,
+      7075,
+      0,
+      "IMAGE"
+    ],
+    [
+      7082,
+      7074,
+      0,
+      7075,
+      1,
+      "IMAGE"
+    ],
+    [
+      7083,
+      7075,
+      0,
+      7071,
+      0,
+      "IMAGE"
+    ],
+    [
+      7081,
+      7071,
+      0,
+      7072,
+      0,
+      "IMAGE"
+    ],
+    [
+      8080,
+      8070,
+      0,
+      8075,
+      0,
+      "IMAGE"
+    ],
+    [
+      8082,
+      8074,
+      0,
+      8075,
+      1,
+      "IMAGE"
+    ],
+    [
+      8083,
+      8075,
+      0,
+      8071,
+      0,
+      "IMAGE"
+    ],
+    [
+      8081,
+      8071,
+      0,
+      8072,
+      0,
+      "IMAGE"
+    ],
+    [
+      9080,
+      9070,
+      0,
+      9075,
+      0,
+      "IMAGE"
+    ],
+    [
+      9082,
+      9074,
+      0,
+      9075,
+      1,
+      "IMAGE"
+    ],
+    [
+      9083,
+      9075,
+      0,
+      9071,
+      0,
+      "IMAGE"
+    ],
+    [
+      9081,
+      9071,
+      0,
+      9072,
+      0,
+      "IMAGE"
+    ],
+    [
+      10080,
+      10070,
+      0,
+      10075,
+      0,
+      "IMAGE"
+    ],
+    [
+      10082,
+      10074,
+      0,
+      10075,
+      1,
+      "IMAGE"
+    ],
+    [
+      10083,
+      10075,
+      0,
+      10071,
+      0,
+      "IMAGE"
+    ],
+    [
+      10081,
+      10071,
+      0,
+      10072,
+      0,
+      "IMAGE"
+    ],
+    [
+      11080,
+      11070,
+      0,
+      11075,
+      0,
+      "IMAGE"
+    ],
+    [
+      11082,
+      11074,
+      0,
+      11075,
+      1,
+      "IMAGE"
+    ],
+    [
+      11083,
+      11075,
+      0,
+      11071,
+      0,
+      "IMAGE"
+    ],
+    [
+      11081,
+      11071,
+      0,
+      11072,
+      0,
+      "IMAGE"
+    ],
+    [
+      12080,
+      12070,
+      0,
+      12075,
+      0,
+      "IMAGE"
+    ],
+    [
+      12082,
+      12074,
+      0,
+      12075,
+      1,
+      "IMAGE"
+    ],
+    [
+      12083,
+      12075,
+      0,
+      12071,
+      0,
+      "IMAGE"
+    ],
+    [
+      12081,
+      12071,
+      0,
+      12072,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}
