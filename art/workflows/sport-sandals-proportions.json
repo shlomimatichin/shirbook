@@ -1,0 +1,536 @@
+{
+  "id": "2cca6505-560f-4773-bcdd-bf9861ee279c",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_sports_source_0.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 83
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit IMAGE ONE, preserving its digital drawing style and all details except the specified corrections. IMAGE TWO is the exact required SANDAL MODEL, not a style reference for the painting. Replace BOTH sandals on Shir with the pictured pink fabric sport sandals: pink woven webbing straps with little pale-blue patterned flecks; black plastic connectors and black strap edging; broad adjustable strap across the toes; adjustable strap across the upper foot/ankle with a supporting heel strap; black textured flat footbed and black low rubber outdoor sole. Toes exposed. Match the actual strap geometry and pink/black colors of the product reference. These are sporty pink fabric sandals, NOT delicate tan leather sandals, not flip-flops, not chunky closed shoes. Render the sandals naturally in the illustration style; no pasted photographic shoes, no legible brand lettering. Preserve blue eyes, honey/dark-blonde hair and scalp-apex bun, lilac T-shirt, dusty-rose shorts and yellow backpack. Apply the sandals consistently to all three views. Keep the owner-approved head sizes, face, smile, poses and hair placement unchanged.",
+        3601,
+        "fixed",
+        "high",
+        "opaque",
+        "1536x1024",
+        1,
+        "gpt-image-2",
+        1024,
+        1024
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/shir-sport-sandals"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            82
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_sport_sandal.png",
+        "image"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_sports_source_1.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 183
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit IMAGE ONE, preserving its digital drawing style and all details except the specified corrections. IMAGE TWO is the exact required SANDAL MODEL, not a style reference for the painting. Replace BOTH sandals on Shir with the pictured pink fabric sport sandals: pink woven webbing straps with little pale-blue patterned flecks; black plastic connectors and black strap edging; broad adjustable strap across the toes; adjustable strap across the upper foot/ankle with a supporting heel strap; black textured flat footbed and black low rubber outdoor sole. Toes exposed. Match the actual strap geometry and pink/black colors of the product reference. These are sporty pink fabric sandals, NOT delicate tan leather sandals, not flip-flops, not chunky closed shoes. Render the sandals naturally in the illustration style; no pasted photographic shoes, no legible brand lettering. Preserve blue eyes, honey/dark-blonde hair and scalp-apex bun, lilac T-shirt, dusty-rose shorts and yellow backpack. CRITICAL SECOND CORRECTION: the head in this COVER is visibly too large. Reduce the WHOLE HEAD INCLUDING FACE, SKULL, HAIR AND BUN by approximately 15 percent in both width and height relative to her unchanged body. Preserve the exact smiling facial likeness and blue eyes; do not enlarge eyes or round the face. Keep the new smaller head attached naturally to the same neck and shoulders. Maintain a believable nine-year-old child's head-to-body ratio matching the approved reference direction, not a bobblehead. Preserve the body's size, limbs, pose and feet position, so the head reduction is clear. Reconstruct the small area of garden background revealed around the smaller head. Keep the bun at the highest point of the scalp. Everything else in the cover stays unchanged: golden garden light, gate, hand on gate, path, flowers, dark empty upper title space, no text, no dragon.",
+        3602,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/cover-proportions-sandals"
+      ]
+    },
+    {
+      "id": 174,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            182
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_sport_sandal.png",
+        "image"
+      ]
+    },
+    {
+      "id": 175,
+      "type": "BatchImagesNode",
+      "pos": [
+        700,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 180
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 182
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            183
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      74,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      75,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      180,
+      170,
+      0,
+      175,
+      0,
+      "IMAGE"
+    ],
+    [
+      182,
+      174,
+      0,
+      175,
+      1,
+      "IMAGE"
+    ],
+    [
+      183,
+      175,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

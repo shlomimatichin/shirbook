@@ -15,7 +15,7 @@ The cover turns to a single contents page. Chapter 1 is **Coming soon**; it will
 - `art/workflows/` and `art/briefs/` — ComfyUI production recipes and prompts. Load the appropriate private source images into named input slots; recipes do not bundle personal photographs.
 - `art/status.json` — release readiness with review provenance. Owner design approval and agent technical review are distinguished.
 
-Shir’s latest design: blue eyes, honey/dark-blonde hair in a loose bun at the scalp apex, lilac shirt, dusty-rose shorts, yellow backpack, thin tan sandals with ankle straps. Skitters is light turquoise, with a yellow belly, apricot wing undersides and a golden forehead star. No dragon appears on the cover.
+Shir’s latest design: blue eyes, honey/dark-blonde hair in a loose bun at the scalp apex, lilac shirt, dusty-rose shorts, yellow backpack, pink patterned sport sandals with black soles and toe/ankle/heel straps. Skitters is light turquoise, with a yellow belly, apricot wing undersides and a golden forehead star. No dragon appears on the cover.
 
 ## Preview and publish
 

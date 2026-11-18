@@ -3,13 +3,13 @@
     "approved": true,
     "path": "art/references/cover.webp",
     "reviewed_by": "production agent",
-    "review": "No dragon; scalp-apex bun, honey/dark-blonde hair, lilac shirt, dusty-rose shorts, thin tan ankle-strap sandals. Matches latest reference direction; typography remains real HTML."
+    "review": "Owner requested smaller head and exact sandal model. Production QA: cover head reduced; pink patterned sport sandals match supplied photo; hair, face, bun, outfit and garden preserved."
   },
   "shir_reference": {
     "approved": true,
     "path": "art/references/shir-reference.webp",
     "reviewed_by": "owner (identity/proportions) and production agent (requested appearance update)",
-    "review": "Owner approved balanced likeness. Applied subsequent requested lighter honey/dark-blonde hair, dusty-rose shorts and thin tan ankle-strap sandals; checked all three views."
+    "review": "Owner-approved likeness and proportions retained; all three views use requested pink patterned sport sandals with black soles and ankle/heel support."
   },
   "skitters_hatchling": {
     "approved": true,
