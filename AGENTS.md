@@ -25,3 +25,5 @@ Latest owner footwear reference supersedes tan leather sandals: use pink pattern
 Art layout update: cover and future reading pages are edge-to-edge (`data-layout="art"`), index remains framed. Bottom 7% of art is a control-safe band with no important details; allow device safe-area/touch-target minima. Preserve key content during responsive cropping.
 
 Latest editorial direction: preserve occasional gentle humor and believable nine-year-old emotional conflicts. The 16-page Chapter 1 draft ends with “Then the egg moves.” The door is unnoticed by others; why it is special for Shir remains unknown. Backpack artwork still needs updating in both the canonical reference and cover, AFTER copy is finished; existing yellow-bag art is superseded on that detail only.
+
+Latest owner review: middle side-profile reference head remains too large; reduce it relative to body while preserving scalp-apex bun. Cover must show only backpack side/straps with print occluded because Shir faces the viewer. Never force HUNTR/X print visible; respect bag geometry and occlusion in all art. Current pink reference/cover require these corrections.

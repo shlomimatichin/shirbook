@@ -31,3 +31,13 @@ Review every page at phone size and adjacent pages together; verify hands, face,
 
 ## Pilot review checkpoint
 Pages 02 and 12 first drafts generated and saved, not release-ready. Page 02 retains likeness and bag but spatial direction reads as entering apartment; corrected exit workflow prepared, not run. Page 12 establishes daylight gate/garden but gaze is toward reader rather than garden, and feet too low for control-safe band; revise before release. Page 16 blocked by insufficient ComfyUI credits before output. No chapter pages deployed. Backpack reference and cover corrections completed and reviewed.
+
+## Owner feedback: proportions and backpack perspective
+
+- Check Shir’s head-to-body proportion independently in EVERY reference view. The middle side-profile head was too large even when front/rear were acceptable. Correct the head locally; keep bun at scalp apex and preserve recognizable face.
+- A consistent backpack does not mean visible HUNTR/X artwork in every shot. The print exists ONLY on its broad outer rear panel. Preserve bag construction, color, straps and panel placement across views.
+- When Shir’s chest/belly faces camera, the backpack is behind her torso: show straps and at most a narrow plain-pink side/pocket. The printed back panel faces away and must be occluded. Do not swivel, flatten or wrap that panel around the side to advertise the print.
+- When Shir’s back faces camera, the rear print may be visible; head turning back does not change torso/bag orientation.
+- Cover and first egg pilot both incorrectly showed a printed rear panel with a front-facing torso. Reject this geometry and correct it before release. Use these as explicit regression checks, not visual references to imitate.
+- Inspect spatial storytelling too: farewell must read as leaving home toward school, with Dad inside; garden discovery should direct Shir’s attention into the garden. Keep bottom control band free of feet and important objects.
+- Prompt reference roles precisely. A reference sheet defines identity and object construction, not a requirement to expose every identifying feature in every scene. Check occlusion before accepting output.

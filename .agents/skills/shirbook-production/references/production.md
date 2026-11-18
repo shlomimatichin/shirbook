@@ -72,3 +72,15 @@ Final urban cover uses `urban-safe.json` after the initial urban edit; it adds c
 Use occasional gentle, character-driven humor like Shir’s “Well… happy birthday to me” when the door will not open. Do not force a joke on every page. Include believable nine-year-old emotional conflicts in simple language: curiosity versus danger, wanting independence versus needing help, and worries about being late or keeping a promise. Chapter 1 combines danger and lateness without a lecture.
 
 Shir’s backpack is mostly pink with a KPop Demon Hunters print showing the three HUNTR/X girls, superseding yellow. Existing reference and cover need a narrow backpack-only edit AFTER copy is finished. Preserve all other approved visual features. Other people do not notice the door; do not assert invisibility or a birthday activation rule. Why it is special for Shir remains unresolved. Chapter 1 ends “Then the egg moves.”
+
+Backpack continuity means consistent construction and perspective, not showing the print in every image. When Shir faces camera, show side/straps only; rear artwork is occluded. Check side-profile head scale separately from front/rear in reference sheets.
+
+## Owner feedback: proportions and backpack perspective
+
+- Check Shir’s head-to-body proportion independently in EVERY reference view. The middle side-profile head was too large even when front/rear were acceptable. Correct the head locally; keep bun at scalp apex and preserve recognizable face.
+- A consistent backpack does not mean visible HUNTR/X artwork in every shot. The print exists ONLY on its broad outer rear panel. Preserve bag construction, color, straps and panel placement across views.
+- When Shir’s chest/belly faces camera, the backpack is behind her torso: show straps and at most a narrow plain-pink side/pocket. The printed back panel faces away and must be occluded. Do not swivel, flatten or wrap that panel around the side to advertise the print.
+- When Shir’s back faces camera, the rear print may be visible; head turning back does not change torso/bag orientation.
+- Cover and first egg pilot both incorrectly showed a printed rear panel with a front-facing torso. Reject this geometry and correct it before release. Use these as explicit regression checks, not visual references to imitate.
+- Inspect spatial storytelling too: farewell must read as leaving home toward school, with Dad inside; garden discovery should direct Shir’s attention into the garden. Keep bottom control band free of feet and important objects.
+- Prompt reference roles precisely. A reference sheet defines identity and object construction, not a requirement to expose every identifying feature in every scene. Check occlusion before accepting output.
