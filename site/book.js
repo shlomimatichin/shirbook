@@ -21,6 +21,7 @@
       page.setAttribute('aria-hidden', String(!active));
     }
     current = target;
+    // Layout selects control colors only; leaf geometry must stay fixed.
     reader.dataset.layout = target.dataset.layout || 'art';
     previous.hidden = target === cover;
     next.hidden = target === chapters;

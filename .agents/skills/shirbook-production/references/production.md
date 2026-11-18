@@ -59,3 +59,10 @@ Owner requested cover and story pages to use the screen without exterior margins
 Reserve the **bottom 7% of every illustration** for overlay buttons: no faces, feet, hands, essential props, lettering or other important details there. Show only expendable background in that band. Account for device safe-area insets and minimum 44px touch targets on short screens; these can require a slightly taller control area. Keep reading text as HTML above the art.
 
 For tall phones, art fills the viewport with central horizontal cropping; keep critical action away from lateral edges and test the crop. On wide screens, preserve the full figure and extend the illustration background to fill the sides rather than cropping heads/feet or adding beige margins. The current cover uses a softly blurred artwork backdrop. Future pages should supply the corresponding page's background, never the cover's.
+
+## Urban gate and stable turns — latest owner direction
+The owner likes the gate cover and requests a modern Israeli urban neighborhood: tall apartment buildings, a modern building facade around the inexplicable old gate, ordinary pavement in front, and a secret garden only beyond the opening. Preserve approved Shir proportions, likeness, wardrobe and bun. Workflow: `art/workflows/urban-gate.json`; prompt: `art/briefs/urban-gate.txt`.
+
+Keep the animation stage full viewport at all times. Size the contents leaf independently inside it; changing the active layout may change control colors, never leaf or stage geometry. This prevents the end-of-turn jump between framed and edge-to-edge layouts.
+
+Final urban cover uses `urban-safe.json` after the initial urban edit; it adds clear pavement below the sandals for controls. Clean master and responsive site assets replace the previous garden-exterior cover. Both raw passes are archived in ignored `work/raw/`.
