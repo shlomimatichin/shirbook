@@ -127,3 +127,8 @@ Owner requested a separate public draft reader: site/staging.html shows approved
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
 
 Page12 scale correction generated using previous reveal as edit target and cover as geometry reference. Installed updated art/chapter1/page12.webp and staging sample. Shir enlarged relative to narrower doorway; agent reviewed, owner review pending. Main Chapter 1 remains Coming soon under explicit post-staging approval gate. Staging wide-screen fit adjusted to preserve full illustration.
+
+## Current checkpoint — complete Chapter 1 staging draft
+All 16 illustrations rendered through Comfy Desktop hosted GPT Image 2 high, individually inspected and integrated with approved copy. `art/chapter1/status.json` records selected renders; clean masters in `art/chapter1`, phone exports in `site/assets/chapter1-NN.webp`. Rebuild with `python3 scripts/build_staging.py`. Raw generations remain ignored in `work/raw`.
+
+Early/home scenes were corrected to remove reference-induced secret gates; page13 now depicts the garden interior. Pages7/14 received rear-panel print corrections. Page12 uses the corrected cover-relative scale. Some painterly/print detail variation remains for owner review, particularly page14; do not claim uniformity or owner approval of these new renders. Text contrast panels added for pages8/13. Main chapter remains Coming soon. Next step: owner reviews the complete staging reader, requests revisions or explicitly approves chapter release. No automatic release.

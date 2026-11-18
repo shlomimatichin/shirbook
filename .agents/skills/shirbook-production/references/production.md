@@ -96,3 +96,6 @@ Door continuity: owner selects COVER proportions as canonical for Shir relative 
 5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
 
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
+
+## Reference leakage learned during Chapter 1
+Do not supply the gate environment as a visual reference for home, ordinary-street or garden-interior shots: it can introduce the secret gate before its reveal or repeat the threshold in unrelated scenes. Use identity-only references for these shots and describe their distinct location explicitly. For a correct composition with a local wardrobe error, prefer a narrow edit of that image; broad regeneration can change door geometry, expression and text space. Inspect the actual rendered page with HTML text on a small phone; add a subtle local text backing where the illustration lacks sufficient contrast.

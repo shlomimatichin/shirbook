@@ -1,6 +1,6 @@
 # Chapter 1 art plan
 
-Text source: `chapters/chapter1.md` (owner approved). All page illustrations pending.
+Text source: `chapters/chapter1.md` (owner approved). All 16 draft illustrations rendered and integrated into staging; owner release approval pending.
 
 ## Continuity and sequence
 First correct pink HUNTR/X backpack on canonical Shir sheet and cover. Then produce a small pilot (pages 2, 12, 16) and compare identity, location and egg scale before remaining pages. Use corrected canonical Shir, urban cover environment, and consistent garden geography as references. Morning street: cool neutral daylight; threshold: warm golden contrast; garden: luminous greens and gold. Cover dusk is a cover treatment, not chapter time. No dragon reveal.
@@ -27,7 +27,7 @@ Portrait digital drawing, varied camera distances. Keep a quiet upper text area 
 16. Over-bush reveal: large egg 25–33% of Shir height, intact shell, subtle tilt implying movement.
 
 ## Release checks
-Review every page at phone size and adjacent pages together; verify hands, face, bun, straps, doors, costume, egg size, daylight and readable text areas. Save sanitized workflows/prompts and clean WebPs. Integrate all 16 approved text pages, test turns, keyboard, reduced motion and mobile overflow. Only then push and deploy the completed chapter.
+Review every page at phone size and adjacent pages together; verify hands, face, bun, straps, doors, costume, egg size, daylight and readable text areas. Save sanitized workflows/prompts and clean WebPs. Integrate all 16 approved text pages, test turns, keyboard, reduced motion and mobile overflow. Deploy to staging for owner review. Publish in the main reader only after explicit owner approval of the staged version.
 
 ## Pilot review checkpoint
 Pages 02 and 12 first drafts generated and saved, not release-ready. Page 02 retains likeness and bag but spatial direction reads as entering apartment; corrected exit workflow prepared, not run. Page 12 establishes daylight gate/garden but gaze is toward reader rather than garden, and feet too low for control-safe band; revise before release. Page 16 blocked by insufficient ComfyUI credits before output. No chapter pages deployed. Backpack reference and cover corrections completed and reviewed.

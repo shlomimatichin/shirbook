@@ -1,0 +1,122 @@
+{
+  "chapter": 1,
+  "status": "complete draft; awaiting owner staging review",
+  "owner_release_approved": false,
+  "model": "gpt-image-2",
+  "quality": "high",
+  "route": "Comfy Desktop hosted node",
+  "pages": [
+    {
+      "page": 1,
+      "path": "art/chapter1/page01.webp",
+      "source_render": "ch01-page01-scene-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 2,
+      "path": "art/chapter1/page02.webp",
+      "source_render": "ch01-page02-exit_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 3,
+      "path": "art/chapter1/page03.webp",
+      "source_render": "ch01-page03-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 4,
+      "path": "art/chapter1/page04.webp",
+      "source_render": "ch01-page04-scene-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 5,
+      "path": "art/chapter1/page05.webp",
+      "source_render": "ch01-page05-final-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 6,
+      "path": "art/chapter1/page06.webp",
+      "source_render": "ch01-page06-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 7,
+      "path": "art/chapter1/page07.webp",
+      "source_render": "ch01-page07-print-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 8,
+      "path": "art/chapter1/page08.webp",
+      "source_render": "ch01-page08-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 9,
+      "path": "art/chapter1/page09.webp",
+      "source_render": "ch01-page09-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 10,
+      "path": "art/chapter1/page10.webp",
+      "source_render": "ch01-page10-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 11,
+      "path": "art/chapter1/page11.webp",
+      "source_render": "ch01-page11-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 12,
+      "path": "art/chapter1/page12.webp",
+      "source_render": "ch01-page12-cover-scale_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 13,
+      "path": "art/chapter1/page13.webp",
+      "source_render": "ch01-page13-scene-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 14,
+      "path": "art/chapter1/page14.webp",
+      "source_render": "ch01-page14-final-fix_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 15,
+      "path": "art/chapter1/page15.webp",
+      "source_render": "ch01-page15-full_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    },
+    {
+      "page": 16,
+      "path": "art/chapter1/page16.webp",
+      "source_render": "Egg_Bag_Geometry_00001_.png",
+      "reviewed_by": "production agent",
+      "owner_release_approved": false
+    }
+  ]
+}
