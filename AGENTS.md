@@ -21,3 +21,5 @@ Owner approved the balanced reference with “ok, shir looks good”. Use that s
 Latest wardrobe correction is applied to both canonical reference and cover: hair lighter honey/dark blonde; dusty-rose shorts (not green); pink patterned fabric sport sandals with black connectors and black rubber soles, matching the owner-provided product photo. Preserve these consistently.
 
 Latest owner footwear reference supersedes tan leather sandals: use pink patterned fabric sport sandals with black connectors and rubber soles, following private/sandal-reference.png. Apply consistently to cover and all reference views. Cover head reduced relative to unchanged body after owner review; preserve the corrected proportion.
+
+Art layout update: cover and future reading pages are edge-to-edge (`data-layout="art"`), index remains framed. Bottom 7% of art is a control-safe band with no important details; allow device safe-area/touch-target minima. Preserve key content during responsive cropping.

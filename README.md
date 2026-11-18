@@ -31,7 +31,7 @@ node --check site/book.js
 
 Push reviewed changes, then run the **Publish book** GitHub Actions workflow manually. Only `site/` is uploaded. Chapter releases are deliberate editorial actions, not a timer.
 
-The reader has a fitted leaf and page-turn navigation. It is checked at 320, 390 and 430 CSS pixels and in landscape. Enlarged accessibility text may overflow inside a leaf rather than being clipped. Keep future chapter text in HTML above the art, with 12–20 pages per chapter and approachable English rather than rigid line counts.
+The cover and future story pages fill the screen, with controls over the bottom 7% of the art; the contents page keeps its framed leaf. Page-turn navigation is retained. It is checked at 320, 390 and 430 CSS pixels and in landscape. Enlarged accessibility text may overflow inside a leaf rather than being clipped. Keep future chapter text in HTML above the art, with 12–20 pages per chapter and approachable English rather than rigid line counts.
 
 ## Private working files
 

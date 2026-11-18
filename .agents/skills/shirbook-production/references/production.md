@@ -52,3 +52,10 @@ When repeated edits cling to an incorrect feature, stop repeating the prompt. Cr
 
 ## Book interaction
 Owner requires the site to feel like a book: a fitted leaf, cover-to-contents page-turn animation and explicit page controls, not a long scrolling webpage. Respect reduced motion. Keep normal phone layouts to one leaf; internal overflow is an accessibility fallback for enlarged text. The current first release has only a Chapter 1 Coming soon entry.
+
+## Edge-to-edge art and control safe area
+Owner requested cover and story pages to use the screen without exterior margins. The chapter index is the exception and remains framed. Mark cover/story sections `data-layout="art"`; use the shared `.page-art` image treatment and the existing page controls. Keep page-turn navigation.
+
+Reserve the **bottom 7% of every illustration** for overlay buttons: no faces, feet, hands, essential props, lettering or other important details there. Show only expendable background in that band. Account for device safe-area insets and minimum 44px touch targets on short screens; these can require a slightly taller control area. Keep reading text as HTML above the art.
+
+For tall phones, art fills the viewport with central horizontal cropping; keep critical action away from lateral edges and test the crop. On wide screens, preserve the full figure and extend the illustration background to fill the sides rather than cropping heads/feet or adding beige margins. The current cover uses a softly blurred artwork backdrop. Future pages should supply the corresponding page's background, never the cover's.

@@ -79,3 +79,10 @@ After replacing the cover, export 480/960/1600px WebPs and update the image vers
 All byproducts stay under ignored `work/`; source photos/reference material under ignored `private/`. Comfy input/output copies are transport, not the canonical archive. Rejected workflows and prior sheets are in `work/archive/`. Raw generated masters are in `work/raw/`. QA evidence is in `work/qa/`. These are available in the owner's local checkout but intentionally absent from a fresh public clone.
 
 The next creative task is to plan and write Chapter 1 **with the owner**. Preserve the launch placeholder until that content and its illustrations are ready. No automatic chapter publishing schedule has been authorized.
+
+## Edge-to-edge art and control safe area
+Owner requested cover and story pages to use the screen without exterior margins. The chapter index is the exception and remains framed. Mark cover/story sections `data-layout="art"`; use the shared `.page-art` image treatment and the existing page controls. Keep page-turn navigation.
+
+Reserve the **bottom 7% of every illustration** for overlay buttons: no faces, feet, hands, essential props, lettering or other important details there. Show only expendable background in that band. Account for device safe-area insets and minimum 44px touch targets on short screens; these can require a slightly taller control area. Keep reading text as HTML above the art.
+
+For tall phones, art fills the viewport with central horizontal cropping; keep critical action away from lateral edges and test the crop. On wide screens, preserve the full figure and extend the illustration background to fill the sides rather than cropping heads/feet or adding beige margins. The current cover uses a softly blurred artwork backdrop. Future pages should supply the corresponding page's background, never the cover's.

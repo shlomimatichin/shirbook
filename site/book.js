@@ -1,5 +1,6 @@
 (() => {
   const book = document.getElementById('book');
+  const reader = document.querySelector('.reader');
   const cover = document.getElementById('cover');
   const chapters = document.getElementById('chapters');
   const previous = document.getElementById('previous');
@@ -20,6 +21,7 @@
       page.setAttribute('aria-hidden', String(!active));
     }
     current = target;
+    reader.dataset.layout = target.dataset.layout || 'art';
     previous.hidden = target === cover;
     next.hidden = target === chapters;
     indicator.textContent = target === cover ? 'The cover' : 'Chapters · 1';
