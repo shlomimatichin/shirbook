@@ -6,13 +6,13 @@ Updated 2026-11-18. Start here, then read `AGENTS.md` and `.agents/skills/shirbo
 
 - Public repository: https://github.com/shlomimatichin/shirbook
 - Live book: https://shlomimatichin.github.io/shirbook/
-- Site is published and verified. It has a cover, animated turn to one contents leaf, and **Chapter 1 — Coming soon**. No chapter text exists yet.
+- Site is published and verified. It has a cover, animated turn to one contents leaf, and **Chapter 1 — Coming soon**. A 16-page collaborative text draft now exists in `chapters/chapter1.md`; it is not on the reading site.
 - Latest art release: `cefa3c9`; Pages run `44351775977` succeeded. Live HTML and cover bytes matched the release.
-- The owner explicitly wants Chapter 1 written **together**, later. Do not invent it or publish a chapter without that collaboration.
+- The owner is writing Chapter 1 **together** with the agent. Do not invent it or publish a chapter without that collaboration.
 
 ## Final character decisions
 
-**Shir:** nine years old; recognizable cheerful smile; blue eyes; honey light-brown/dark-blonde hair; small loose bun at the **highest point of the scalp**. Not behind the head, and not over the forehead. Lilac T-shirt, dusty-rose shorts, yellow backpack.
+**Shir:** nine years old; recognizable cheerful smile; blue eyes; honey light-brown/dark-blonde hair; small loose bun at the **highest point of the scalp**. Not behind the head, and not over the forehead. Lilac T-shirt, dusty-rose shorts, mostly pink backpack with the three HUNTR/X girls from KPop Demon Hunters printed on it. Existing canonical art still has the superseded yellow bag; update the reference and cover after copy is finished.
 
 The owner approved the balanced reference likeness/proportions with “ok, shir looks good”, then requested lighter hair, pink/rose rather than green shorts, and subsequently supplied a specific sandal photo. The newest changes were implemented and technically reviewed; do not describe them as a separate explicit owner approval.
 
@@ -78,7 +78,7 @@ After replacing the cover, export 480/960/1600px WebPs and update the image vers
 
 All byproducts stay under ignored `work/`; source photos/reference material under ignored `private/`. Comfy input/output copies are transport, not the canonical archive. Rejected workflows and prior sheets are in `work/archive/`. Raw generated masters are in `work/raw/`. QA evidence is in `work/qa/`. These are available in the owner's local checkout but intentionally absent from a fresh public clone.
 
-The next creative task is to plan and write Chapter 1 **with the owner**. Preserve the launch placeholder until that content and its illustrations are ready. No automatic chapter publishing schedule has been authorized.
+The current creative task is to finish the 16-page Chapter 1 copy **with the owner**, then update the backpack in the Shir reference and cover before chapter illustration. Preserve the launch placeholder until that content and its illustrations are ready. No automatic chapter publishing schedule has been authorized.
 
 ## Edge-to-edge art and control safe area
 Owner requested cover and story pages to use the screen without exterior margins. The chapter index is the exception and remains framed. Mark cover/story sections `data-layout="art"`; use the shared `.page-art` image treatment and the existing page controls. Keep page-turn navigation.
@@ -93,3 +93,17 @@ The owner likes the gate cover and requests a modern Israeli urban neighborhood:
 Keep the animation stage full viewport at all times. Size the contents leaf independently inside it; changing the active layout may change control colors, never leaf or stage geometry. This prevents the end-of-turn jump between framed and edge-to-edge layouts.
 
 Final urban cover uses `urban-safe.json` after the initial urban edit; it adds clear pavement below the sandals for controls. Clean master and responsive site assets replace the previous garden-exterior cover. Both raw passes are archived in ignored `work/raw/`.
+
+## Chapter 1 copy — latest owner decisions
+
+Draft: `chapters/chapter1.md`. Pink backpack, crosswalk instead of shop, door unnoticed by other people, birthday joke retained, danger plus being-late conflict, final line “Then the egg moves.” The door is special for Shir but its cause is unknown; do not make the birthday a confirmed trigger. Preserve gentle humor and age-nine emotional conflicts in future chapters. Owner explicitly says copy first, graphics afterward; the reference-sheet and cover backpack updates remain queued. Site remains Coming soon.
+
+## Chapter art authorized
+Owner approved Chapter 1 text and requested `chapters/chapter1.md`. Copy is now locked; begin backpack corrections and all 16 page illustrations. Publish when finished and verified. Prior copy-first hold is satisfied.
+
+## Active generation session
+Backpack jobs submitted through signed-in ComfyUI: Shirbook_Backpack_Reference running, Shirbook_Backpack_Cover queued. Hosted GPT Image 2 high. Server unusually slow (over 11 minutes, no error or output as of last check); do not resubmit blindly. Expected outputs in shared output/shirbook/Backpack_Reference* and Backpack_Cover*. Archive raw results to work/raw, inspect before replacing canonical assets. Three pilots prepared in art/workflows/ch01-page{02,12,16}-pilot.json and Comfy workflow list as Shirbook_Pilot_02/12/16. They require corrected images copied to shared input/shirbook_pink_reference.png and shirbook_pink_cover.png; not submitted yet. Scripts under work/session/backpack_workflow.py and pilot_workflows.py.
+
+Recovery: cancelled stalled reference after ~38 minutes; local queue verified 0 running/0 pending. Cover surfaced Sign In Required to Use API Nodes. Comfy Desktop login screen opened; awaiting owner sign-in. No backpack outputs found, no pilots submitted. Do not treat prior queued jobs as active. Resume with backpack reference after authentication restored.
+
+Recovery succeeded after owner signed in: backpack reference completed in 73s (45.02 credits), cover in 79s (76.69 credits). Both visually reviewed and installed as clean canonical assets; site cover derivatives updated locally. Three pilots 02/12/16 now submitted through ComfyUI. Owner requests periodic commits; checkpoint coherent reviewed changes, keep unfinished chapter off Pages.

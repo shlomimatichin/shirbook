@@ -4,7 +4,7 @@
 
 Use concrete everyday words, short active sentences, clear referents and repeated useful vocabulary. Start with present-tense narration unless the story needs otherwise. One visible action or emotional beat per page. Let the picture explain unfamiliar nouns; avoid idioms, long clauses and dense description. Read aloud at a beginner's pace. Aim for a small handful of sentences, often 5–7 lines; allow fewer on a dramatic page and more when comfortable. Do not use automated word counts as a substitute for editorial judgment. At 320–430px wide and enlarged text, wrapping must remain readable without clipping.
 
-Plan 12–20 pages as a beat sheet before illustration. For each page record text, action, setting, characters and age stage, wardrobe, props, composition and continuity from adjacent pages. The first chapter remains unwritten until the user collaborates.
+Plan 12–20 pages as a beat sheet before illustration. For each page record text, action, setting, characters and age stage, wardrobe, props, composition and continuity from adjacent pages. The first chapter is being drafted collaboratively in `chapters/chapter1.md`; finish the copy with the owner before illustration.
 
 ## Art bible
 
@@ -66,3 +66,9 @@ The owner likes the gate cover and requests a modern Israeli urban neighborhood:
 Keep the animation stage full viewport at all times. Size the contents leaf independently inside it; changing the active layout may change control colors, never leaf or stage geometry. This prevents the end-of-turn jump between framed and edge-to-edge layouts.
 
 Final urban cover uses `urban-safe.json` after the initial urban edit; it adds clear pavement below the sandals for controls. Clean master and responsive site assets replace the previous garden-exterior cover. Both raw passes are archived in ignored `work/raw/`.
+
+## Continuing editorial voice and backpack correction
+
+Use occasional gentle, character-driven humor like Shir’s “Well… happy birthday to me” when the door will not open. Do not force a joke on every page. Include believable nine-year-old emotional conflicts in simple language: curiosity versus danger, wanting independence versus needing help, and worries about being late or keeping a promise. Chapter 1 combines danger and lateness without a lecture.
+
+Shir’s backpack is mostly pink with a KPop Demon Hunters print showing the three HUNTR/X girls, superseding yellow. Existing reference and cover need a narrow backpack-only edit AFTER copy is finished. Preserve all other approved visual features. Other people do not notice the door; do not assert invisibility or a birthday activation rule. Why it is special for Shir remains unresolved. Chapter 1 ends “Then the egg moves.”

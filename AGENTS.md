@@ -4,13 +4,13 @@ Start with `HANDOFF.md`, then read `.agents/skills/shirbook-production/SKILL.md`
 
 ## Current character direction
 
-Shir: nine-year-old protagonist, blue eyes, recognizable happy smile, honey light-brown/dark-blonde loose topknot at the highest point of the scalp (not over the forehead), lilac T-shirt, dusty-rose shorts, yellow backpack and pink patterned fabric sport sandals with black connectors, black soles and adjustable toe/ankle/heel straps. Owner accepted the revised smile direction. Canonical production sheet is `art/references/shir-reference.webp`; the forward-bun correction succeeded with GPT Image 2 in ComfyUI after Gemini repeatedly retained the old placement. Do not reuse the rejected rear-bun portraits.
+Shir: nine-year-old protagonist, blue eyes, recognizable happy smile, honey light-brown/dark-blonde loose topknot at the highest point of the scalp (not over the forehead), lilac T-shirt, dusty-rose shorts, mostly pink backpack with a KPop Demon Hunters print of the three HUNTR/X girls and pink patterned fabric sport sandals with black connectors, black soles and adjustable toe/ankle/heel straps. Owner accepted the revised smile direction. Canonical production sheet is `art/references/shir-reference.webp`; the forward-bun correction succeeded with GPT Image 2 in ComfyUI after Gemini repeatedly retained the old placement. Do not reuse the rejected rear-bun portraits.
 
 Dragon name is **Skitters**, formerly Zinger. Owner approved its shape and accepted the light turquoise palette revision. Preserve ivory horns, yellow belly, apricot wing undersides, amber eyes, forehead star, four legs, two wings and one tail. Hatchling has tiny rounded horn buds. Use the stage-specific canonical sheet; growth scale targets are in `art/scale-guide.md`.
 
 ## Book and release
 
-Title: **Shir's Secret**. No dragon on cover. Beginner English: small readable text blocks, usually above art; flexible line counts. Chapters 12–20 pages. Write Chapter 1 with the owner later, never invent or publish it prematurely. Launch contains cover → chapter selection → only Chapter 1, Coming soon.
+Title: **Shir's Secret**. No dragon on cover. Beginner English: small readable text blocks, usually above art; flexible line counts. Chapters 12–20 pages. Chapter 1 is being written with the owner in `chapters/chapter1.md`; finish the copy together before art and do not publish it prematurely. Launch contains cover → chapter selection → only Chapter 1, Coming soon.
 
 Only `site/` is deployed to GitHub Pages. Validate with `python3 scripts/check_book.py --release`. Publish deliberate editorial updates, not scheduled unfinished content. The repository and Pages publication are already authorized. Do not invent further permission gates for routine implementation or QA. Record actual review provenance accurately in `art/status.json`.
 
@@ -23,3 +23,5 @@ Latest wardrobe correction is applied to both canonical reference and cover: hai
 Latest owner footwear reference supersedes tan leather sandals: use pink patterned fabric sport sandals with black connectors and rubber soles, following private/sandal-reference.png. Apply consistently to cover and all reference views. Cover head reduced relative to unchanged body after owner review; preserve the corrected proportion.
 
 Art layout update: cover and future reading pages are edge-to-edge (`data-layout="art"`), index remains framed. Bottom 7% of art is a control-safe band with no important details; allow device safe-area/touch-target minima. Preserve key content during responsive cropping.
+
+Latest editorial direction: preserve occasional gentle humor and believable nine-year-old emotional conflicts. The 16-page Chapter 1 draft ends with “Then the egg moves.” The door is unnoticed by others; why it is special for Shir remains unknown. Backpack artwork still needs updating in both the canonical reference and cover, AFTER copy is finished; existing yellow-bag art is superseded on that detail only.
