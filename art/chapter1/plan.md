@@ -28,3 +28,6 @@ Portrait digital drawing, varied camera distances. Keep a quiet upper text area 
 
 ## Release checks
 Review every page at phone size and adjacent pages together; verify hands, face, bun, straps, doors, costume, egg size, daylight and readable text areas. Save sanitized workflows/prompts and clean WebPs. Integrate all 16 approved text pages, test turns, keyboard, reduced motion and mobile overflow. Only then push and deploy the completed chapter.
+
+## Pilot review checkpoint
+Pages 02 and 12 first drafts generated and saved, not release-ready. Page 02 retains likeness and bag but spatial direction reads as entering apartment; corrected exit workflow prepared, not run. Page 12 establishes daylight gate/garden but gaze is toward reader rather than garden, and feet too low for control-safe band; revise before release. Page 16 blocked by insufficient ComfyUI credits before output. No chapter pages deployed. Backpack reference and cover corrections completed and reviewed.
