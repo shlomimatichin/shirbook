@@ -1,0 +1,81 @@
+# Shir’s Secret — handoff
+
+Updated 2026-11-18. Start here, then read `AGENTS.md` and `.agents/skills/shirbook-production/SKILL.md`.
+
+## Current result
+
+- Public repository: https://github.com/shlomimatichin/shirbook
+- Live book: https://shlomimatichin.github.io/shirbook/
+- Site is published and verified. It has a cover, animated turn to one contents leaf, and **Chapter 1 — Coming soon**. No chapter text exists yet.
+- Latest art release: `cefa3c9`; Pages run `44351775977` succeeded. Live HTML and cover bytes matched the release.
+- The owner explicitly wants Chapter 1 written **together**, later. Do not invent it or publish a chapter without that collaboration.
+
+## Final character decisions
+
+**Shir:** nine years old; recognizable cheerful smile; blue eyes; honey light-brown/dark-blonde hair; small loose bun at the **highest point of the scalp**. Not behind the head, and not over the forehead. Lilac T-shirt, dusty-rose shorts, yellow backpack.
+
+The owner approved the balanced reference likeness/proportions with “ok, shir looks good”, then requested lighter hair, pink/rose rather than green shorts, and subsequently supplied a specific sandal photo. The newest changes were implemented and technically reviewed; do not describe them as a separate explicit owner approval.
+
+**Current sandals:** pink patterned fabric sport sandals, pale-blue pattern flecks, black connectors/edging, black footbed and low rubber sole, adjustable toe and upper-foot/ankle straps, heel support. Match the canonical sheet. These supersede the earlier thin tan leather sandals. The product photo is private, not committed.
+
+**Cover proportions:** owner said the head was still too big. Latest edit requests roughly 15% smaller head relative to unchanged body; visual QA confirms a visibly smaller head. Preserve this result rather than returning to an earlier large-head cover. A prompt percentage is not a pixel measurement.
+
+**Skitters:** formerly named Zinger. Approved identity, subsequently changed to light turquoise. Yellow belly, apricot wing undersides, turquoise wing backs, amber eyes, ivory horns, golden star on forehead; four legs, two wings, one tail. Hatchling has tiny rounded horn buds. Four age stages have separate references. Adult body eventually becomes small-car sized so Shir can ride it. See `art/scale-guide.md`; the lineup compresses scale.
+
+## Canonical assets — use these
+
+- `art/references/shir-reference.webp` — latest three-view character sheet, including the exact sandal direction.
+- `art/references/cover.webp` — latest clean cover master, smaller head and pink sport sandals.
+- `art/references/skitters-hatchling.webp`
+- `art/references/skitters-baby.webp`
+- `art/references/skitters-adolescent.webp`
+- `art/references/skitters-adult.webp`
+- `art/references/skitters-lineup.webp` — identity overview, **not** a true scale chart.
+- `art/status.json` — readiness and review provenance.
+
+Do not use earlier raw portraits or sheets as identity references. The clean canonical artwork is sufficient for routine future illustrations; original photos are only needed when correcting likeness.
+
+## Art workflow and lessons
+
+Use the owner's **local Comfy Desktop app**, including authorized hosted partner nodes. Local app does not mean local inference. Do not extract session tokens. Run through the signed-in UI; save sanitized workflow JSON, prompts, reference roles and observed costs.
+
+1. Write a specific shot brief: action, camera, composition, expression, wardrobe, stage, lighting, and text space. Assign each reference a clear role.
+2. Use canonical drawings for identity, the appropriate single dragon stage, and explicit structure/style references when needed.
+3. Generate a small candidate batch, inspect full size and phone size, then make narrow corrections.
+4. Compare corrected assets with the originals for unintended face, proportion, hand, sandal, horn or wing changes. Check all three reference views, not only the first.
+5. Export clean RGB WebP derivatives without EXIF, XMP or embedded workflow metadata. Keep text as HTML rather than baked into art.
+
+Nano Banana Pro (`GeminiImage2Node`, model `gemini-3-pro-image-preview`, usually 2K) established the drawing style, dragon and cover composition. It repeatedly resisted bun repositioning, even with explicit prompts and a structure diagram. **GPT Image 2 (`OpenAIGPTImage1`, high quality) through ComfyUI succeeded** on targeted hair, head-size and wardrobe edits. This is observed project performance, not a general model ranking. Do not spend many retries on a failing model/feature pair.
+
+For multi-reference edits, `LoadImage` nodes feed `BatchImagesNode`, then the image model and `SaveImage`. The latest recipe is `art/workflows/sport-sandals-proportions.json`; exact prompts are in `art/briefs/sport-sandals-proportions.txt`. Other retained recipes document the dragon/reference and cover-composition steps. Their input filenames are transport placeholders: replace them with the intended source images in the local Comfy input directory. The JSON does not contain the source photos.
+
+In the setup used here, new images had to be placed in the **root** Comfy input folder; subfolders did not appear in LoadImage choices. Refresh the app after adding inputs, then open the saved workflow through the Workflows sidebar. Re-read current UI state; accessibility element IDs are not stable. Refresh the workflow list if a new JSON file is missing. Verify output files and visual quality, not just an empty queue.
+
+The initial hosted budget was **$25 total**, not a recurring allowance. Detailed records are in ignored `work/session/cost-ledger.json`; some per-run costs were not captured, so do not claim an exact total. Official conversion verified on 2026-11-18: 211 credits per USD. Reference the linked source in the skill research notes and recheck current prices before new substantial spending.
+
+## Reading and website decisions
+
+- Beginner English; small approachable text blocks, generally above the art. The initial 5–7 lines was guidance, **not a hard numerical limit**.
+- Each chapter: 12–20 pages. Build a beat sheet, thumbnails and color script before final illustration. Run consistency tests before generating a whole chapter.
+- The website must **feel like a book**. Fitted leaves, page-turn animation and explicit controls; long scrolling is not primary navigation. Respect reduced motion. Internal overflow is an accessibility fallback for enlarged text.
+- Cover title: **Shir’s Secret**. **No dragon, egg reveal or dragon silhouette on the cover.**
+- Current implementation: plain HTML/CSS/JS, no build dependencies. Arrow keys and controls turn pages; focus moves to the new heading. Browser Back during a turn cancels the pending animation safely.
+
+## Editing and release
+
+Only `site/` deploys to Pages. Photos and intermediate files never belong there.
+
+```sh
+python3 scripts/check_book.py --release
+node --check site/book.js
+```
+
+For UI changes, check 320/390/430 CSS-pixel widths, landscape, keyboard/focus, reduced motion and enlarged text. Previous checks found no ordinary phone-page scrolling or horizontal overflow; enlarged text can scroll inside the leaf. Reduced-motion code was reviewed without changing the owner's OS preference.
+
+After replacing the cover, export 480/960/1600px WebPs and update the image version query in `site/index.html` so existing viewers receive the new art. Check image metadata and the staged file list. Commit and push reviewed changes, then manually run **Publish book** (`pages.yml`). Wait for success and verify the live assets. Publication and routine updates to this repository/site are already authorized; do not invent a new approval gate.
+
+## Working files and next step
+
+All byproducts stay under ignored `work/`; source photos/reference material under ignored `private/`. Comfy input/output copies are transport, not the canonical archive. Rejected workflows and prior sheets are in `work/archive/`. Raw generated masters are in `work/raw/`. QA evidence is in `work/qa/`. These are available in the owner's local checkout but intentionally absent from a fresh public clone.
+
+The next creative task is to plan and write Chapter 1 **with the owner**. Preserve the launch placeholder until that content and its illustrations are ready. No automatic chapter publishing schedule has been authorized.

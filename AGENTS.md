@@ -1,6 +1,6 @@
 # Shirbook
 
-Read `.agents/skills/shirbook-production/SKILL.md` and its applicable references for art, writing and publishing. Use the local ComfyUI app, including authorized hosted nodes. Keep all byproducts in ignored `work/`, source photos in ignored `private/`. Never publish real photos or generation metadata.
+Start with `HANDOFF.md`, then read `.agents/skills/shirbook-production/SKILL.md` and its applicable references for art, writing and publishing. Use the local ComfyUI app, including authorized hosted nodes. Keep all byproducts in ignored `work/`, source photos in ignored `private/`. Never publish real photos or generation metadata.
 
 ## Current character direction
 

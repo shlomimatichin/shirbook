@@ -5,7 +5,7 @@ description: Create consistent illustrated characters, covers and beginner-Engli
 
 # Shir's Secret production
 
-Read `references/production.md` for visual continuity, reading level, art QA and publishing. Read `references/research.md` when choosing models or changing the ComfyUI workflow. Project root is three directories above this folder.
+Read the repository-root `HANDOFF.md` for current state and latest owner decisions. Then read `references/production.md` for visual continuity, reading level, art QA and publishing. Read `references/research.md` when choosing models or changing the ComfyUI workflow. Project root is three directories above this folder.
 
 ## Established brief
 

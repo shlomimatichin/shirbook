@@ -6,6 +6,10 @@ A mobile-first illustrated book for beginning English readers.
 
 The cover turns to a single contents page. Chapter 1 is **Coming soon**; it will be written with the owner before any story pages are published. Use the page controls or left/right arrow keys. The animation respects reduced-motion preferences.
 
+## Agent handoff
+
+Start with [HANDOFF.md](HANDOFF.md) for current design decisions, canonical assets, ComfyUI lessons, release steps and the next task.
+
 ## Production
 
 - `site/` — the only directory deployed to GitHub Pages; plain HTML, CSS and JavaScript, no build dependencies.
