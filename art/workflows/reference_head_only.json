@@ -1,0 +1,173 @@
+{
+  "id": "da7c09a4-b3c2-478e-905b-a308464f338c",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_Reference_Proportion.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Perform a strictly localized edit to the MIDDLE figure HEAD ONLY. Keep every pixel below her neck unchanged, including torso width, shoulders, arms, backpack, shorts, legs and sandals and EXACT positions. Do not resize or move the middle figure. Keep her feet aligned with the other two views on the same baseline. Reduce only the oversized profile head modestly to match the head/body ratio of left and right figures. Neck joins naturally. Preserve facial identity, honey blonde scalp-apex bun, blue eye. Left and right figures completely unchanged. Background unchanged. No whole-body scaling, no layout changes.",
+        5301,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1536,
+        1024
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/Reference_Head_Only"
+      ]
+    }
+  ],
+  "links": [
+    [
+      180,
+      170,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

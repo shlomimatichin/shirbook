@@ -41,3 +41,6 @@ Pages 02 and 12 first drafts generated and saved, not release-ready. Page 02 ret
 - Cover and first egg pilot both incorrectly showed a printed rear panel with a front-facing torso. Reject this geometry and correct it before release. Use these as explicit regression checks, not visual references to imitate.
 - Inspect spatial storytelling too: farewell must read as leaving home toward school, with Dad inside; garden discovery should direct Shir’s attention into the garden. Keep bottom control band free of feet and important objects.
 - Prompt reference roles precisely. A reference sheet defines identity and object construction, not a requirement to expose every identifying feature in every scene. Check occlusion before accepting output.
+
+## Corrected sample checkpoint
+Selected samples: page02.webp (leaving home; Dad face omitted), page12.webp (looking into luminous garden, feet clear of control band), page16.webp (egg reveal; backpack rear print correctly occluded). Production-agent reviewed; owner review ongoing. Original page02/page12 drafts retained as documented earlier alternatives, not release selections. No chapter deployment yet; remaining 13 illustrations and integration still pending.
