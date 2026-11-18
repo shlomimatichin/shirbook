@@ -115,3 +115,13 @@ Owner feedback is now recorded in the production reference and chapter art plan:
 Latest selected samples: art/chapter1/page02.webp, page12.webp, page16.webp. All three generated and visually reviewed. Cover_Bag_Geometry and Reference_Head_Only installed as canonical; rejected Reference_Proportion shrank whole middle figure, archived only. Egg_Bag_Geometry fixes print visibility. User feedback retained in skill production reference. Hosted credit top-up $25 completed by explicit authorization. Remaining chapter art/integration not complete; no Pages deployment this session.
 
 Owner requested a separate public draft reader: site/staging.html shows approved Chapter 1 copy for all 16 pages with available drafts at 2/12/16 and explicit illustration-pending placeholders elsewhere. Keep main index Coming soon until complete. Update staging as art develops; page12 scale correction pending to match cover.
+
+## Chapter release approval — owner-required gate
+
+1. Develop chapter text and art; commit coherent checkpoints periodically.
+2. Deploy the chapter to `site/staging.html` and verify the live staging reader, including all text, art, page navigation and phone layout. Clearly label drafts and missing illustrations.
+3. Send the owner the live staging URL and identify the version/commit for review.
+4. Publish a chapter in the main book ONLY after the owner explicitly approves publication of that staged version. Earlier text approval, approval of individual images, generation authorization, credit purchases, or requests to push commits do not constitute chapter release approval.
+5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
+
+Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.

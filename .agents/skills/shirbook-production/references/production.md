@@ -84,3 +84,15 @@ Backpack continuity means consistent construction and perspective, not showing t
 - Cover and first egg pilot both incorrectly showed a printed rear panel with a front-facing torso. Reject this geometry and correct it before release. Use these as explicit regression checks, not visual references to imitate.
 - Inspect spatial storytelling too: farewell must read as leaving home toward school, with Dad inside; garden discovery should direct Shir’s attention into the garden. Keep bottom control band free of feet and important objects.
 - Prompt reference roles precisely. A reference sheet defines identity and object construction, not a requirement to expose every identifying feature in every scene. Check occlusion before accepting output.
+
+Door continuity: owner selects COVER proportions as canonical for Shir relative to doorway and door width/height. Page12 initial reveal made her too small and gate too wide. Match cover geometry across all door scenes, independent of framing or pose; never enlarge doorway to manufacture text/control space.
+
+## Chapter release approval — owner-required gate
+
+1. Develop chapter text and art; commit coherent checkpoints periodically.
+2. Deploy the chapter to `site/staging.html` and verify the live staging reader, including all text, art, page navigation and phone layout. Clearly label drafts and missing illustrations.
+3. Send the owner the live staging URL and identify the version/commit for review.
+4. Publish a chapter in the main book ONLY after the owner explicitly approves publication of that staged version. Earlier text approval, approval of individual images, generation authorization, credit purchases, or requests to push commits do not constitute chapter release approval.
+5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
+
+Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.

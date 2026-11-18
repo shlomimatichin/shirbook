@@ -27,3 +27,13 @@ Art layout update: cover and future reading pages are edge-to-edge (`data-layout
 Latest editorial direction: preserve occasional gentle humor and believable nine-year-old emotional conflicts. The 16-page Chapter 1 draft ends with “Then the egg moves.” The door is unnoticed by others; why it is special for Shir remains unknown. Backpack artwork still needs updating in both the canonical reference and cover, AFTER copy is finished; existing yellow-bag art is superseded on that detail only.
 
 Latest owner review: middle side-profile reference head remains too large; reduce it relative to body while preserving scalp-apex bun. Cover must show only backpack side/straps with print occluded because Shir faces the viewer. Never force HUNTR/X print visible; respect bag geometry and occlusion in all art. Current pink reference/cover require these corrections.
+
+## Chapter release approval — owner-required gate
+
+1. Develop chapter text and art; commit coherent checkpoints periodically.
+2. Deploy the chapter to `site/staging.html` and verify the live staging reader, including all text, art, page navigation and phone layout. Clearly label drafts and missing illustrations.
+3. Send the owner the live staging URL and identify the version/commit for review.
+4. Publish a chapter in the main book ONLY after the owner explicitly approves publication of that staged version. Earlier text approval, approval of individual images, generation authorization, credit purchases, or requests to push commits do not constitute chapter release approval.
+5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
+
+Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.

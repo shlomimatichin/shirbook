@@ -1,6 +1,6 @@
 # Chapter 1: The Little Bell
 
-Status: text approved by owner on 2026-11-18. 16 pages. Art production authorized; publish chapter when complete and checked.
+Status: text approved by owner on 2026-11-18. 16 pages. Art production authorized. Deploy to staging for review; publish in the main book only after explicit owner approval of the staged version.
 
 ## Page 1
 

@@ -26,3 +26,13 @@ Create canonical drawings before scene production. Reference those drawings in e
 Repository: `shlomimatichin/shirbook`; desired checkout: `~/personal/shirbook`; public host: GitHub Pages under `/shirbook/`. Use relative asset URLs. Keep first release to cover → chapter selection → only Chapter 1 (Coming soon until collaboratively written). No fabricated pages or extra chapter cards.
 
 The user conditioned site publication on having the cover and character references. Build and test the shell now; publish the site after these assets are ready. Repository creation itself is authorized. `scripts/check_book.py --release` enforces asset readiness. GitHub Actions is manual until first release. After launch, publish chapters deliberately every few days or weekly as agreed; no timer should release unfinished work.
+
+## Chapter release approval — owner-required gate
+
+1. Develop chapter text and art; commit coherent checkpoints periodically.
+2. Deploy the chapter to `site/staging.html` and verify the live staging reader, including all text, art, page navigation and phone layout. Clearly label drafts and missing illustrations.
+3. Send the owner the live staging URL and identify the version/commit for review.
+4. Publish a chapter in the main book ONLY after the owner explicitly approves publication of that staged version. Earlier text approval, approval of individual images, generation authorization, credit purchases, or requests to push commits do not constitute chapter release approval.
+5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
+
+Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
