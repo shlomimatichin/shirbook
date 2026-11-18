@@ -125,3 +125,5 @@ Owner requested a separate public draft reader: site/staging.html shows approved
 5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
 
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
+
+Page12 scale correction generated using previous reveal as edit target and cover as geometry reference. Installed updated art/chapter1/page12.webp and staging sample. Shir enlarged relative to narrower doorway; agent reviewed, owner review pending. Main Chapter 1 remains Coming soon under explicit post-staging approval gate. Staging wide-screen fit adjusted to preserve full illustration.
