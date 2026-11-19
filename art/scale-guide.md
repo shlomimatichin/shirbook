@@ -14,3 +14,6 @@ Adult tail adds approximately 2 m. Keep the adult on four feet for scale compari
 Across all stages: light turquoise main scales, warm yellow belly, apricot wing undersides, amber eyes, two ivory horns (only rounded buds on the hatchling), golden star-shaped forehead scale, four legs, two wings, one tail. Wing backs are turquoise. Avoid new decorative marks or changing the forehead star's position.
 
 Reference sheets guide identity and anatomy; perspective views are not exact orthographic measurements. Use a stage-specific canonical reference for each scene, never the whole growth lineup when only one age is needed.
+
+## Joint references required for new scenes
+Before Chapter 2 art, establish Shir + hatchling at identical depth on one ground line and interaction views for partial sandal contact. Hatchling shoulder/Shir height ratio = 18/130 ≈ 0.138; torso length/Shir height = 30/130 ≈ 0.231. Head height and tail length need a single canonical choice, not per-scene guesses. Camouflage never changes size. Do not fit his whole body onto one sandal. See production skill `references/consistency-workflow.md`. No new art authorized as of 2026-11-19.

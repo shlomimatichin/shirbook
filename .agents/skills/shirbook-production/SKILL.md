@@ -36,3 +36,5 @@ The user conditioned site publication on having the cover and character referenc
 5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
 
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
+
+Before new chapter art, read `references/consistency-workflow.md`: shared character scale plates, interaction blocking, installed hosted-node constraints and small pilot batches. Chapter 2 currently has an explicit text-only hold. Story rules are in `chapters/story-continuity.md` at repo root.
