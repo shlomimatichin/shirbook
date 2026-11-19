@@ -157,3 +157,5 @@ Chapter2 pilot checkpoint: pages4/8/11 generated, agent-reviewed and integrated 
 Latest: owner approved Chapter2 pilots and authorized all remaining13 pages for staging review; commit periodically. Main Chapter2 release still requires explicit approval.
 
 Cost audit: owner requested online research; see production references/cost-control.md. $25 topup completed (5275credits). BatchA pages1/2/3 rendered high but not selected; B–E prepared medium1024x1536, not yet submitted.
+
+Current checkpoint: batchesA/B complete; pages2/3/5/6/7 installed. BatchC submitted medium:10/12 complete and installed;9 still pending at last file check. Mac locked during attempt to select batchD: ask owner to unlock; do not use backend submission. D/E not submitted, Repair1 prepared not submitted. Page1 original rejected backpack print and high framing. Cost audit committed. No new staging deployment yet.

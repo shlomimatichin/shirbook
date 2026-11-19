@@ -29,3 +29,7 @@ Installed nodes_openai.py preset estimates for1024x1536 output: GPT Image2 low$0
 8. After two failed fixes of one defect, change blocking/method instead of blind reruns. Preserve accepted artwork and correct only the fault.
 
 Current Chapter2 batchesB–E changed to medium1024x1536. BatchA finished under prior high setting; page1 backpack print and page2/3 framing/scale require QA before selection. Main release remains unapproved.
+
+Additional official source: [Comfy upscaling tutorial](https://docs.comfy.org/tutorials/basic/upscale) documents model-based ESRGAN upscaling and recommends comparing models by image type. This is an option for future print masters, not necessary for current mobile exports.
+
+First medium batchB completed in34.87seconds per UI job, versus batchA99.49seconds. Images5/6/7 inspected and retained for staging QA; no formal same-scene A/B has been completed, so do not claim equivalent quality or an exact savings percentage. Balance afterB5381credits; earlier595→365 was a pending reservation, not final cost. Use settled per-job receipts for future exact accounting.

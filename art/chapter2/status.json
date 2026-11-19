@@ -76,6 +76,28 @@
         1536
       ],
       "path": "art/chapter2/page07.webp"
+    },
+    "10": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page10-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page10.webp"
+    },
+    "12": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page12-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page12.webp"
     }
   },
   "qa": [
