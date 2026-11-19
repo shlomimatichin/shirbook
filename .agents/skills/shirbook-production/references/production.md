@@ -99,3 +99,6 @@ Routine commits, pushes and staging deployments remain authorized and do not req
 
 ## Reference leakage learned during Chapter 1
 Do not supply the gate environment as a visual reference for home, ordinary-street or garden-interior shots: it can introduce the secret gate before its reveal or repeat the threshold in unrelated scenes. Use identity-only references for these shots and describe their distinct location explicitly. For a correct composition with a local wardrobe error, prefer a narrow edit of that image; broad regeneration can change door geometry, expression and text space. Inspect the actual rendered page with HTML text on a small phone; add a subtle local text backing where the illustration lacks sufficient contrast.
+
+## Persistent environment continuity
+Treat recurring locations/props like characters: generate a canonical multi-view door sheet before scene batches. Lock hinge axis, free edge, paired handles, inward/outward swing, wall fixtures, dimensions and camera side. A garden reverse shot must reverse physical handedness, not copy the street facade. Track open/closed state across pages and match hand contact to the actual free edge. Check adjacent page pairs for action chronology, adult/child scale and consistent object dimensions. See `art/chapter1/continuity-review.md` for the owner-requested correction pass.
