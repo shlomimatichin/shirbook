@@ -1,0 +1,279 @@
+{
+  "id": "a52baa05-e81a-4ee4-bfa0-e6a571a9124d",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_16.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 83
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit ORIGINAL scene reference1, retain Shir face, pose, bushes, egg, drawing style and composition. Reference2 defines SAME arched gate. Background gate is seen from INSIDE garden: hinges at LEFT JAMB, curved brass vertical pull on RIGHT FREE EDGE. Door open 70 degrees TOWARD camera into garden. FIXED timber arched opening stays attached to wall ABOVE moving door leaf. Do NOT turn fixed arched frame into rectangle. Street visible through opening, no second wall blocking it. No intercom or vent inside garden. Render correct single leaf with no duplicate handles, door top fits fixed arch when shut. Keep egg large, about one third Shir standing height, not tiny: only shrink original egg about 20 percent. Preserve all other details and pink backpack occlusion. Bottom10 percent expendable ground. One portrait page, NO labels/text.",
+        7216,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/door-retry-16"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            82
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      74,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      75,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

@@ -44,56 +44,56 @@
     {
       "page": 6,
       "path": "art/chapter1/page06.webp",
-      "source_render": "ch01-page06-full_00001_.png",
+      "source_render": "ch01-doorfix-06_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 7,
       "path": "art/chapter1/page07.webp",
-      "source_render": "ch01-page07-print-fix_00001_.png",
+      "source_render": "door-retry-07_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 8,
       "path": "art/chapter1/page08.webp",
-      "source_render": "ch01-page08-full_00001_.png",
+      "source_render": "ch01-doorfix-08_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 9,
       "path": "art/chapter1/page09.webp",
-      "source_render": "ch01-page09-full_00001_.png",
+      "source_render": "ch01-doorfix-09_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 10,
       "path": "art/chapter1/page10.webp",
-      "source_render": "ch01-page10-full_00001_.png",
+      "source_render": "ch01-doorfix-10_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 11,
       "path": "art/chapter1/page11.webp",
-      "source_render": "ch01-page11-full_00001_.png",
+      "source_render": "door-retry-11_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 12,
       "path": "art/chapter1/page12.webp",
-      "source_render": "ch01-page12-cover-scale_00001_.png",
+      "source_render": "ch01-doorfix-12_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 13,
       "path": "art/chapter1/page13.webp",
-      "source_render": "ch01-page14-final-fix_00001_.png",
+      "source_render": "ch01-doorfix-14_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
@@ -107,14 +107,14 @@
     {
       "page": 15,
       "path": "art/chapter1/page15.webp",
-      "source_render": "ch01-page15-full_00001_.png",
+      "source_render": "door-final-15_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 16,
       "path": "art/chapter1/page16.webp",
-      "source_render": "Egg_Bag_Geometry_00001_.png",
+      "source_render": "door-final-16_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     }

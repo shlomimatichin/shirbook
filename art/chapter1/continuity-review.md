@@ -11,7 +11,7 @@ Street facade: intercom left, vent right, two rectangular wall lights. These str
 ## Findings and corrective scope
 
 - 6–10: inconsistent pulls, placement and hinge sides; rebuild from reference, with believable reach/hand contact.
-- 7: adults too short relative to Shir/wall. Retain pedestrians to support text, increase height with heads around wall top at comparable depth; Shir approximately three-quarters adult height.
+- 7: adults too short relative to Shir/wall. First retry failed adult scale. Use owner-authorized alternative: remove visible adults. Text still describes people passing outside this moment/frame.
 - 11: leaf swing and handle attachment ambiguous; show only narrow inward crack, before wide reveal on12.
 - 12: preserve owner-requested cover-relative scale while matching hinge axis and inward swing.
 - 13/14: garden exploration precedes decision to enter. Swap entire text+art page pair so hesitation/entry precedes interior exploration; preserve prose.
@@ -22,3 +22,8 @@ Street facade: intercom left, vent right, two rectangular wall lights. These str
 
 ## Production status
 Door reference generation started in ComfyUI. Corrected page batch prepared locally, must run only after reference geometry passes visual inspection. No corrected art is yet installed or deployed at this checkpoint.
+
+## Selected revision direction
+Reference v2 removes the erroneously repeated garden vent. Closed street scenes use left-edge vertical pulls/right hinges. Page11 narrow-crack retry replaces the failed wide/outward-looking attempt. Pages13/14 text+art pairs swapped. Repeated reverse-angle attempts invented invalid arches; rejected. Pages15/16 now move deeper among garden bushes with the gate obscured, rather than presenting misleading reverse geometry. Future shots that show the gate must still obey canonical reference.
+
+Residual review points: small variations remain in pull size/backplate, hinge count, backpack print and figure proportions. Bottom control clearance is tight on several full-body compositions; inspect phone presentation before owner release. These are drafts, not a claim of exact object continuity or final approval.
