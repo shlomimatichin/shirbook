@@ -24,7 +24,7 @@ for chapter,title,filename in chapters:
     css=hashlib.sha256((site/'preview.css').read_bytes()).hexdigest()[:10]
     js=hashlib.sha256((site/'staging.js').read_bytes()).hexdigest()[:10]
     options=''.join(f'<option value="{file}" {"selected" if num==chapter else ""}>Chapter {num} · {html.escape(name)}</option>' for num,name,file in chapters)
-    samples='<div class="sample-links" aria-label="Illustrated samples">Samples: '+ ' · '.join(f'<a href="#page{n}">Page {n}</a>' for n in illustrated)+'</div>' if chapter==2 else ''
+    samples='<div class="sample-links" aria-label="Illustrated samples">Samples: '+ ' · '.join(f'<a href="#page{n}">Page {n}</a>' for n in [4,8,11] if n in illustrated)+'</div>' if chapter==2 else ''
     (site/filename).write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'''+f'<title>Draft Chapter {chapter} — Shir’s Secret staging</title><link rel="stylesheet" href="preview.css?v={css}"><script src="staging.js?v={js}" defer></script>'+'''<style>
 .placeholder{position:absolute;inset:42% 10% 18%;display:grid;place-items:center;border:1px dashed #9f9a86;color:#747d6a;font-family:Georgia,serif;font-style:italic}
 header select{max-width:51vw;font:inherit;background:#fff9ed;color:inherit;border:1px solid #bdb6a5;border-radius:8px;padding:6px;min-height:32px}

@@ -21,6 +21,61 @@
       "model": "gpt-image-2",
       "quality": "high",
       "path": "art/chapter2/page11.webp"
+    },
+    "2": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page02-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "dimensions": [
+        1696,
+        2528
+      ],
+      "path": "art/chapter2/page02.webp"
+    },
+    "3": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page03-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "dimensions": [
+        1696,
+        2528
+      ],
+      "path": "art/chapter2/page03.webp"
+    },
+    "5": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page05-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page05.webp"
+    },
+    "6": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page06-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page06.webp"
+    },
+    "7": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page07-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page07.webp"
     }
   },
   "qa": [
