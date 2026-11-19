@@ -78,7 +78,7 @@ The door will not open.
 *Click.*
 
 I am still holding the handle.  
-But I did not turn it.
+But I am not moving.
 
 ## Page 11
 
