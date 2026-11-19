@@ -37,4 +37,4 @@ The user conditioned site publication on having the cover and character referenc
 
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
 
-Before new chapter art, read `references/consistency-workflow.md`: shared character scale plates, interaction blocking, installed hosted-node constraints and small pilot batches. Chapter 2 currently has an explicit text-only hold. Story rules are in `chapters/story-continuity.md` at repo root.
+Before new chapter art, read `references/consistency-workflow.md`: shared character scale plates, interaction blocking, installed hosted-node constraints and small pilot batches. Owner authorized joint scale and sandal-interaction references on 2026-11-19. Show them for review before Chapter 2 page illustrations. Story rules are in `chapters/story-continuity.md` at repo root.

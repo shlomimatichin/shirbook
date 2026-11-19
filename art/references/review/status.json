@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "status": "owner-review-pending",
+  "model": "gpt-image-2",
+  "route": "Comfy Desktop hosted OpenAIGPTImage1",
+  "quality": "high",
+  "size": [
+    1536,
+    1536
+  ],
+  "page_art_generated": false,
+  "references": [
+    {
+      "file": "shir-skitters-scale.webp",
+      "source": "shared-scale-grounded_00001_.png"
+    },
+    {
+      "file": "shir-skitters-front-paws.webp",
+      "source": "interaction-paws-v1_00001_.png"
+    },
+    {
+      "file": "shir-skitters-seated.webp",
+      "source": "interaction-seated-v1_00001_.png"
+    }
+  ],
+  "notes": [
+    "These are draft joint/interaction references, not replacements for approved individual identity sheets.",
+    "Page4 front paws rest on sandal; hind feet support body on ground. Page16 haunches on ground, one front paw on sandal.",
+    "Agent inspected all outputs. Owner must review before Chapter2 page art.",
+    "Approximate hand-estimated neutral scale landmarks: Shir scalp-to-sole1085px; dragon shoulder-to-ground150px; snout-to-rump240px; headtop-to-ground310px; egg350px. Ratios are approximate because painted anatomy and slight threequarter perspective are not CAD measurements.",
+    "Interaction pose/camera changes affect projected lengths; use these with canonical identity sheets and scale target, never resize dragon to fit shoe."
+  ]
+}

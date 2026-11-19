@@ -24,7 +24,7 @@ Inspected local `comfy_api_nodes/nodes_openai.py` on 2026-11-19. Existing workfl
 - Environment references: door closed/open from each side plus simple top-down hinge/swing diagram and figure position. Inspect geometry BEFORE accepting the sheet; generated sheets can themselves contradict physics.
 
 ### Scale lock
-Existing drawing convention: Shir 130 cm; hatchling shoulder 18 cm (0.138 of Shir height), torso length excluding tail 30 cm (0.231 of Shir height). These are production conventions, not Shir's measured height. Shoulder height is not head height. Tail length/head height remain to be resolved from canonical hatchling design before creating scale plates; do not invent contradictory numbers per page.
+Existing drawing convention: Shir 130 cm; hatchling shoulder 18 cm (0.138 of Shir height), body length from snout to rump, excluding tail 30 cm (0.231 of Shir height). These are production conventions, not Shir's measured height. Shoulder height is not head height. Tail length/head height remain to be resolved from canonical hatchling design before creating scale plates; do not invent contradictory numbers per page.
 
 Compare ratios only when subjects stand at similar depth on the same plane. For close-ups, seated poses or different depths, use a blocking reference/camera layout, not raw image bounding-box ratios. Proposed QA tolerance for comparable side-on neutral views: roughly ±10% around approved ratios, then visual judgment; this is a project check, not an AI guarantee. Never resize the dragon to fit a prop or text area. Revise pose/camera instead.
 

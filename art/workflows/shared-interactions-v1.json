@@ -1,0 +1,687 @@
+{
+  "id": "411bec06-89a1-49e8-a317-177f8102f6f9",
+  "revision": 0,
+  "last_node_id": 4000,
+  "last_link_id": 4000,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        0
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_joint_scale_v3.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 83
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Create ONE interaction reference drawing, not a chapter page, on plain cream ground/background. IMAGE 1 is Shir and Skitters together at the correct RELATIVE PHYSICAL SIZE; preserve these proportions exactly. Correct its small baseline offset: in your output ALL feet must share the ground plane, with the dragon BESIDE the foot, not closer to camera. IMAGE 2 is hatchling identity/anatomy detail only, NOT a cue to enlarge him. Full body Shir visible scalp bun to sandals, relaxed standing, looking down at dragon warmly, front three-quarter view with both feet on ground. Same depth for both characters, no perspective size tricks. Preserve normal 9-year-old head/body proportions, blue eyes, honey dark-blonde scalp-apex topknot, lilac tee, dusty-rose shorts, pink sport sandals with black sole/straps, pink backpack with rear print occluded. Skitters light turquoise, amber eyes, yellow belly, apricot wing membranes, ivory rounded horn buds, forehead golden star. Four legs, two separate wings, one tail. Shoulder 18cm compared with Shir 130cm; snout-to-rump length 30cm excluding tail, head top roughly36cm when standing. Do not make dragon shoe-sized or knee-high at shoulder. Preserve drawing style. No egg, dimensions, lettering, labels, scenery, inset or duplicate character. Entire tail and all support contacts visible. Plenty of plain margin below soles. Skitters stands BESIDE Shir right sandal, facing towards her foot from the outside. Both tiny FRONT paws rest gently on the toe strap of her sandal; both HIND paws remain planted on the ground, his whole torso extends OUTSIDE the shoe, belly above ground and tail extends away. Front paws are raised only the small height of the sandal. Do not stack his body onto her foot or stand him upright. Slight side-on view of dragon allows clear contact and his full length.",
+        8200,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1536,
+        1536
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/interaction-paws-v1"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        450
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            82
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_joint_hatchling.png",
+        "image"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1700
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_joint_scale_v3.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        2700
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 1083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Create ONE interaction reference drawing, not a chapter page, on plain cream ground/background. IMAGE 1 is Shir and Skitters together at the correct RELATIVE PHYSICAL SIZE; preserve these proportions exactly. Correct its small baseline offset: in your output ALL feet must share the ground plane, with the dragon BESIDE the foot, not closer to camera. IMAGE 2 is hatchling identity/anatomy detail only, NOT a cue to enlarge him. Full body Shir visible scalp bun to sandals, relaxed standing, looking down at dragon warmly, front three-quarter view with both feet on ground. Same depth for both characters, no perspective size tricks. Preserve normal 9-year-old head/body proportions, blue eyes, honey dark-blonde scalp-apex topknot, lilac tee, dusty-rose shorts, pink sport sandals with black sole/straps, pink backpack with rear print occluded. Skitters light turquoise, amber eyes, yellow belly, apricot wing membranes, ivory rounded horn buds, forehead golden star. Four legs, two separate wings, one tail. Shoulder 18cm compared with Shir 130cm; snout-to-rump length 30cm excluding tail, head top roughly36cm when standing. Do not make dragon shoe-sized or knee-high at shoulder. Preserve drawing style. No egg, dimensions, lettering, labels, scenery, inset or duplicate character. Entire tail and all support contacts visible. Plenty of plain margin below soles. Skitters sits on his haunches ON THE GROUND immediately beside Shir right sandal. ONE near FRONT paw rests gently on its pink toe strap; the other front paw is clearly planted on the ground alongside. His haunches and hind feet are on ground, never on the sandal. Torso and tail remain outside the shoe. He looks up at Shir with affectionate infant expression. Seated shoulder may lower naturally, but physical body/head size unchanged.",
+        8201,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1536,
+        1536
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        2700
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/interaction-seated-v1"
+      ]
+    },
+    {
+      "id": 1074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        2150
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_joint_hatchling.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        2400
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 1080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 1082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        5000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_joint_scale_v3.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        5000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 3180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Correct only the ground placement of the turquoise dragon. Translate his entire unchanged figure STRAIGHT UP by 60 pixels so the bottoms of all his feet meet the horizontal baseline shared by Shir and the egg. Preserve dragon width, height, pose, anatomy, face, colors. The dragon currently stands below the baseline, closer to viewer; correct that. Clean the area vacated below him to match cream background. Keep Shir, egg, baseline, framing completely unchanged. Do NOT resize dragon. Do NOT change any proportions. No text.",
+        8102,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1536,
+        1536
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        5000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/shared-scale-grounded"
+      ]
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      74,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      75,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      1080,
+      1070,
+      0,
+      1075,
+      0,
+      "IMAGE"
+    ],
+    [
+      1082,
+      1074,
+      0,
+      1075,
+      1,
+      "IMAGE"
+    ],
+    [
+      1083,
+      1075,
+      0,
+      1071,
+      0,
+      "IMAGE"
+    ],
+    [
+      1081,
+      1071,
+      0,
+      1072,
+      0,
+      "IMAGE"
+    ],
+    [
+      3180,
+      3170,
+      0,
+      3171,
+      0,
+      "IMAGE"
+    ],
+    [
+      3181,
+      3171,
+      0,
+      3172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}
