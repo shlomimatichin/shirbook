@@ -1,5 +1,5 @@
 {
-  "scope": "Owner approved pilots4/8/11 and authorized remaining13 images for staging review. Main Chapter2 release not approved.",
+  "scope": "Complete16-page draft for owner staging review. Main Chapter2 release NOT approved.",
   "pages": {
     "4": {
       "status": "owner-approved-pilot",
@@ -101,7 +101,7 @@
     },
     "14": {
       "status": "agent-reviewed-owner-review-pending",
-      "source": "ch02-page14-full_00001_.png",
+      "source": "ch02-page14-repair_00001_.png",
       "model": "gpt-image-2",
       "quality": "medium",
       "dimensions": [
@@ -123,7 +123,7 @@
     },
     "9": {
       "status": "agent-reviewed-owner-review-pending",
-      "source": "ch02-page09-retry_00001_.png",
+      "source": "ch02-page9-repair_00001_.png",
       "model": "gpt-image-2",
       "quality": "medium",
       "dimensions": [
@@ -170,6 +170,10 @@
     "Agent inspected all3 framed renders full-size.",
     "Checked phone views including320 CSSpx and390 CSSpx: framing preserves action and keeps text above characters.",
     "Sample links and next-page placeholder navigation observed working.",
-    "Published Chapter1 snapshot unchanged."
+    "Published Chapter1 snapshot unchanged.",
+    "Reviewed all remaining renders against approved hatchling scale and identities.",
+    "Targeted backpack perspective and phone crop fixes applied.",
+    "Local320x568 text and navigation checked;16/16 images loaded.",
+    "Chapter1 published assets unchanged."
   ]
 }

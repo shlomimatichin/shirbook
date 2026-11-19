@@ -47,3 +47,5 @@ Latest approval 2026-11-19: owner said “yes, looks right, please push.” All 
 2026-11-19 owner authorized Chapter2 pilot art pages4/8/11 and public staging deployment, then review BEFORE remaining images. Main Chapter2 release not approved.
 
 Latest: owner approved Chapter2 pilots and authorized all remaining13 pages for staging review; commit periodically. Main Chapter2 release still requires explicit approval.
+
+Latest completed Chapter2 draft: all16 pages illustrated; pilots4/8/11 owner-approved, remaining images agent-reviewed pending owner review. Medium1024x1536 used after cost audit; original pages2/3 remain high. Page9 stalled request cancelled and isolated retry succeeded. Backpack/framing repairs selected on1/9/13/14/15/16. Staging only; main release NOT authorized. Short-phone layout keeps full artwork bottom-aligned and text above; main Chapter1 unchanged.
