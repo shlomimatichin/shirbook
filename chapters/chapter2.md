@@ -1,6 +1,6 @@
 # Chapter 2: I Am Not Your Mama!
 
-Status: owner accepted draft on 2026-11-19. Shared scale and sandal-interaction references authorized on 2026-11-19; page art awaits owner review of those references. Not approved for publication.
+Status: owner accepted draft on 2026-11-19. Shared scale and sandal-interaction references authorized on 2026-11-19; references approved; three page-art samples (4/8/11) and public staging authorized. Remaining page art awaits sample review. Not approved for publication.
 
 ## Page 1
 

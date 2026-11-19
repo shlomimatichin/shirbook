@@ -43,3 +43,5 @@ Latest release state (supersedes prior Chapter1 pending notes): owner approved s
 Latest 2026-11-19: owner authorized sandal wording changes and shared Shir/Skitters scale + interaction reference generation. Show these for owner review BEFORE Chapter 2 page art. Chapter 1 remains published; no Chapter 2 publication authorized.
 
 Latest approval 2026-11-19: owner said “yes, looks right, please push.” All three shared scale/interaction references in art/references/review are approved and authorized for the public GitHub repository. Reference review gate satisfied; use them alongside individual identity sheets. No Chapter 2 page art or chapter release in this checkpoint.
+
+2026-11-19 owner authorized Chapter2 pilot art pages4/8/11 and public staging deployment, then review BEFORE remaining images. Main Chapter2 release not approved.

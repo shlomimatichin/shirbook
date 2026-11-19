@@ -1,0 +1,1306 @@
+{
+  "id": "67d20050-e349-43b4-ad48-81bdfac7bb9d",
+  "revision": 0,
+  "last_node_id": 300,
+  "last_link_id": 300,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        0
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_contact.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        430
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_shir.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        860
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_dragon.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        1290
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        1720
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_block_4.png",
+        "image"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "BatchImagesNode",
+      "pos": [
+        -400,
+        0
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "name": "images.image3",
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "name": "images.image4",
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "name": "images.image5",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 20
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Premium children's book DIGITAL DRAWING, portrait1696x2528. Preserve the warm cream/moss/apricot palette, hand-drawn contours and luminous garden atmosphere of supplied refs, with ordinary plants, never fantasy flowers or other magical beings. INPUT ROLES: image1 approved SHARED character scale/interaction reference; image2 Shir individual identity/outfit; image3 Skitters HATCHLING identity/anatomy; image4 established Chapter1 GARDEN environment/lighting only, NOT its human proportions or egg pose; image5 rough placement map for camera and safe areas only. Canonical infant dragon has four short legs plus two wings and one tail, turquoise scales, butter-yellow belly, apricot wing undersides, ivory rounded horn buds, amber eyes, forehead gold star. Shir9, blue eyes, honey dark blonde topknot at scalp apex NOT forehead, lilac shirt, dusty rose shorts, pink sport sandals with black connectors/soles. Pink backpack rear panel print of three HUNTR/X girls exists ONLY on rear: front torso view shows straps/plain side, print fully occluded. Normal child head proportion, no oversized head. SAME dragon physical size in every pose: shoulder18cm, snout-to-rump30cm excluding tail, Shir130cm, headtop approx36cm. Use image1 relative scale; never enlarge dragon to fill page or shrink to fit sandal. Both at same depth except natural pose; keep full figure and all contact visible. Quiet PALE cream misty light TOP32 percent for HTML reading text. No baked text, lettering, speech bubbles, rulers, collage or panels. Empty expendable path/background BOTTOM12 percent for navigation; no feet, tail, flame or plot details in bottom12percent. All essential characters/action within central60percent width for phone crop. Garden clearing stone path, shrub masses, warm sunlight and subtle glow, no door or city in these interior shots. Page4 humor and attachment: Shir stands looking down in amused surprised disbelief, one hand lightly at her chest as if saying Me? Body faces viewer threequarter. Skitters beside her sandal, both FRONT paws on pink toe strap, BOTH HIND feet planted on path. Torso and tail entirely OUTSIDE sandal. Use image1 contact pose closely: he is a small puppy-sized hatchling, not a toy on her foot. Shir full body occupies x28-55percent, scalp y34percent, soles y85percent; dragon x50-75percent with headtop around70percent and feet85percent. A few broken cream-speckled eggshell pieces near shrub behind them, subtle secondary detail. No intact egg. She has natural startled smile, not terror.",
+        9204,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        0
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page04-pilot"
+      ]
+    },
+    {
+      "id": 101,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        2600
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            101
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_joint.png",
+        "image"
+      ]
+    },
+    {
+      "id": 102,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        3030
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            102
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_shir.png",
+        "image"
+      ]
+    },
+    {
+      "id": 103,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        3460
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            103
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_dragon.png",
+        "image"
+      ]
+    },
+    {
+      "id": 104,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        3890
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            104
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 105,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        4320
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            105
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_block_8.png",
+        "image"
+      ]
+    },
+    {
+      "id": 110,
+      "type": "BatchImagesNode",
+      "pos": [
+        -400,
+        2600
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 101
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 102
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "link": 103
+        },
+        {
+          "name": "images.image3",
+          "type": "IMAGE",
+          "link": 104
+        },
+        {
+          "name": "images.image4",
+          "type": "IMAGE",
+          "link": 105
+        },
+        {
+          "name": "images.image5",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            120
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 111,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        2600
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 120
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            121
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Premium children's book DIGITAL DRAWING, portrait1696x2528. Preserve the warm cream/moss/apricot palette, hand-drawn contours and luminous garden atmosphere of supplied refs, with ordinary plants, never fantasy flowers or other magical beings. INPUT ROLES: image1 approved SHARED character scale/interaction reference; image2 Shir individual identity/outfit; image3 Skitters HATCHLING identity/anatomy; image4 established Chapter1 GARDEN environment/lighting only, NOT its human proportions or egg pose; image5 rough placement map for camera and safe areas only. Canonical infant dragon has four short legs plus two wings and one tail, turquoise scales, butter-yellow belly, apricot wing undersides, ivory rounded horn buds, amber eyes, forehead gold star. Shir9, blue eyes, honey dark blonde topknot at scalp apex NOT forehead, lilac shirt, dusty rose shorts, pink sport sandals with black connectors/soles. Pink backpack rear panel print of three HUNTR/X girls exists ONLY on rear: front torso view shows straps/plain side, print fully occluded. Normal child head proportion, no oversized head. SAME dragon physical size in every pose: shoulder18cm, snout-to-rump30cm excluding tail, Shir130cm, headtop approx36cm. Use image1 relative scale; never enlarge dragon to fill page or shrink to fit sandal. Both at same depth except natural pose; keep full figure and all contact visible. Quiet PALE cream misty light TOP32 percent for HTML reading text. No baked text, lettering, speech bubbles, rulers, collage or panels. Empty expendable path/background BOTTOM12 percent for navigation; no feet, tail, flame or plot details in bottom12percent. All essential characters/action within central60percent width for phone crop. Garden clearing stone path, shrub masses, warm sunlight and subtle glow, no door or city in these interior shots. Page8 fire sneeze: ONE captured moment. Full-body Shir at x28-48percent, scalp y34percent, planted sandal y85percent, other foot slightly lifted while she recoils backwards. Wide surprised eyes, open mouth, palms raised naturally saying STOP, gaze down at tiny flame. Skitters at x55-70percent, same ground depth and canonical scale, body remains at y76-85percent, headtop around70percent. His eyes squeezed shut in accidental SNEEZE, muzzle angled down toward a SINGLE dry leaf lying on bare stone path between them. ONE very short little orange flame puff from nose/mouth reaches leaf; leaf tip just ignites with a tiny flame. This is not a fire-breathing attack. Flame does not touch Shir, clothes or vegetation. No burning bush, large fire, smoke cloud or fearsome teeth. Wings small, four feet physically plausible. Emotion: startled child and surprised newborn, gentle story tone.",
+        9208,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 112,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        2600
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 121
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page08-pilot"
+      ]
+    },
+    {
+      "id": 201,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        5200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            201
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_joint.png",
+        "image"
+      ]
+    },
+    {
+      "id": 202,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        5630
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            202
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_shir.png",
+        "image"
+      ]
+    },
+    {
+      "id": 203,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        6060
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            203
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_dragon.png",
+        "image"
+      ]
+    },
+    {
+      "id": 204,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        6490
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            204
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_garden.png",
+        "image"
+      ]
+    },
+    {
+      "id": 205,
+      "type": "LoadImage",
+      "pos": [
+        -900,
+        6920
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            205
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_block_11.png",
+        "image"
+      ]
+    },
+    {
+      "id": 210,
+      "type": "BatchImagesNode",
+      "pos": [
+        -400,
+        5200
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 201
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 202
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "link": 203
+        },
+        {
+          "name": "images.image3",
+          "type": "IMAGE",
+          "link": 204
+        },
+        {
+          "name": "images.image4",
+          "type": "IMAGE",
+          "link": 205
+        },
+        {
+          "name": "images.image5",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            220
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 211,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        5200
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 220
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            221
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Premium children's book DIGITAL DRAWING, portrait1696x2528. Preserve the warm cream/moss/apricot palette, hand-drawn contours and luminous garden atmosphere of supplied refs, with ordinary plants, never fantasy flowers or other magical beings. INPUT ROLES: image1 approved SHARED character scale/interaction reference; image2 Shir individual identity/outfit; image3 Skitters HATCHLING identity/anatomy; image4 established Chapter1 GARDEN environment/lighting only, NOT its human proportions or egg pose; image5 rough placement map for camera and safe areas only. Canonical infant dragon has four short legs plus two wings and one tail, turquoise scales, butter-yellow belly, apricot wing undersides, ivory rounded horn buds, amber eyes, forehead gold star. Shir9, blue eyes, honey dark blonde topknot at scalp apex NOT forehead, lilac shirt, dusty rose shorts, pink sport sandals with black connectors/soles. Pink backpack rear panel print of three HUNTR/X girls exists ONLY on rear: front torso view shows straps/plain side, print fully occluded. Normal child head proportion, no oversized head. SAME dragon physical size in every pose: shoulder18cm, snout-to-rump30cm excluding tail, Shir130cm, headtop approx36cm. Use image1 relative scale; never enlarge dragon to fill page or shrink to fit sandal. Both at same depth except natural pose; keep full figure and all contact visible. Quiet PALE cream misty light TOP32 percent for HTML reading text. No baked text, lettering, speech bubbles, rulers, collage or panels. Empty expendable path/background BOTTOM12 percent for navigation; no feet, tail, flame or plot details in bottom12percent. All essential characters/action within central60percent width for phone crop. Garden clearing stone path, shrub masses, warm sunlight and subtle glow, no door or city in these interior shots. Page11 camouflage discovery: Shir full body at left x27-50percent, scalp y35percent soles y85percent, bends just slightly at waist, searching a low shrub to right. Curious worried expression, gaze directed at two amber eyes among leaves. Skitters stands same depth at shrub base x52-73percent with headtop about70percent and paws85percent, physical dimensions unchanged. His scales, belly and wing membranes now muted leaf-green/moss matching surrounding foliage; low colour contrast hides his body against bush. He remains completely OPAQUE and solid, NOT a ghost or transparent hole, not dissolving, not a second creature. Some natural foreground leaves overlap him, but two amber eyes and ONE clearly visible green curved tail extending from body onto path are readable clues. Same round infant head, horn buds, star location (subdued moss-gold) and four-leg/two-wing silhouette as image3. Head shape not changed by camouflage. No turquoise patches yet, no transition split, no fire or bell. Quiet intimate discovery. Show enough contour on close inspection to understand he is hiding.",
+        9211,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 212,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        5200
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 221
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page11-pilot"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      2,
+      0,
+      10,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      3,
+      0,
+      10,
+      2,
+      "IMAGE"
+    ],
+    [
+      4,
+      4,
+      0,
+      10,
+      3,
+      "IMAGE"
+    ],
+    [
+      5,
+      5,
+      0,
+      10,
+      4,
+      "IMAGE"
+    ],
+    [
+      20,
+      10,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      11,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      101,
+      101,
+      0,
+      110,
+      0,
+      "IMAGE"
+    ],
+    [
+      102,
+      102,
+      0,
+      110,
+      1,
+      "IMAGE"
+    ],
+    [
+      103,
+      103,
+      0,
+      110,
+      2,
+      "IMAGE"
+    ],
+    [
+      104,
+      104,
+      0,
+      110,
+      3,
+      "IMAGE"
+    ],
+    [
+      105,
+      105,
+      0,
+      110,
+      4,
+      "IMAGE"
+    ],
+    [
+      120,
+      110,
+      0,
+      111,
+      0,
+      "IMAGE"
+    ],
+    [
+      121,
+      111,
+      0,
+      112,
+      0,
+      "IMAGE"
+    ],
+    [
+      201,
+      201,
+      0,
+      210,
+      0,
+      "IMAGE"
+    ],
+    [
+      202,
+      202,
+      0,
+      210,
+      1,
+      "IMAGE"
+    ],
+    [
+      203,
+      203,
+      0,
+      210,
+      2,
+      "IMAGE"
+    ],
+    [
+      204,
+      204,
+      0,
+      210,
+      3,
+      "IMAGE"
+    ],
+    [
+      205,
+      205,
+      0,
+      210,
+      4,
+      "IMAGE"
+    ],
+    [
+      220,
+      210,
+      0,
+      211,
+      0,
+      "IMAGE"
+    ],
+    [
+      221,
+      211,
+      0,
+      212,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.35,
+      "offset": [
+        1000,
+        100
+      ]
+    }
+  },
+  "version": 0.4
+}
