@@ -1,0 +1,2592 @@
+{
+  "id": "a658d247-69fb-4cd4-bc23-2c7ed1785ba7",
+  "revision": 0,
+  "last_node_id": 10000,
+  "last_link_id": 10000,
+  "nodes": [
+    {
+      "id": 70,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            80
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_06.png",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 83
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side, door fully CLOSED. Shir studies it.",
+        7206,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 72,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-06"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            82
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        700
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 82
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        2100
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_07.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        2100
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 1083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side, CLOSED. Keep both pedestrians but make them clearly adults: their heads at wall top height, Shir much shorter, about 75 percent their height on same ground plane. They ignore door. Restore right wall vent.",
+        7207,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 1072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        2100
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-07"
+      ]
+    },
+    {
+      "id": 1074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        2100
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 1075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        1800
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 1080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 1082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        3200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_08.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        3200
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 2083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side CLOSED, startled Shir. Move handle to LEFT FREE EDGE, hinges RIGHT. Preserve face and pose, not old handle location.",
+        7208,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 2072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        3200
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-08"
+      ]
+    },
+    {
+      "id": 2074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        3200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 2075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        2900
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 2080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 2082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        4300
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_09.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        4300
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 3083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side CLOSED. Shir pushes/pulls ONE curved vertical brass pull at LEFT FREE EDGE. Reposition her hands/body as necessary to reach it naturally. No central handle.",
+        7209,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        4300
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-09"
+      ]
+    },
+    {
+      "id": 3074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        4300
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 3075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        4000
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 3080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 3082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 4070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        5400
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_10.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        5400
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 4083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side CLOSED. Shir still holds same LEFT FREE EDGE curved pull, wry smile. Reposition arm/body naturally. No right or central handle.",
+        7210,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        5400
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 4081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-10"
+      ]
+    },
+    {
+      "id": 4074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        5400
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 4075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        5100
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 4080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 4082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        6500
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_11.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        6500
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 5083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side. Door opens only a SMALL CRACK INWARD INTO GARDEN on RIGHT jamb hinges. Light through narrow slit at LEFT latch jamb. Hand holds LEFT free-edge pull. Do not make a wide doorway reveal yet.",
+        7211,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 5072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        6500
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-11"
+      ]
+    },
+    {
+      "id": 5074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        6500
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 5075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        6200
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 5080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 5082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        7600
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_12.png",
+        "image"
+      ]
+    },
+    {
+      "id": 6071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        7600
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 6083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side, door pushed WIDE INWARD into garden on right jamb. Shir looks into garden. Keep cover-relative figure and door scale.",
+        7212,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 6072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        7600
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-12"
+      ]
+    },
+    {
+      "id": 6074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        7600
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 6075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        7300
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 6080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 6082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        8700
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_14.png",
+        "image"
+      ]
+    },
+    {
+      "id": 7071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        8700
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 7083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Street side threshold hesitation, door WIDE OPEN INWARD, Shir glances back worried while starting to enter. Handle on correct free edge, right jamb hinges. Preserve rear backpack print.",
+        7214,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 7072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        8700
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-14"
+      ]
+    },
+    {
+      "id": 7074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        8700
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 7075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        8400
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 7080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 7082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 8070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        9800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_15.png",
+        "image"
+      ]
+    },
+    {
+      "id": 8071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        9800
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 8083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Camera INSIDE GARDEN looking back toward street. Door remains WIDE OPEN, reverse view means hinge jamb LEFT and handle on RIGHT free edge of leaf. Behind opening show ordinary urban street, not more magical garden. Shir listens beside bush. Keep egg completely hidden.",
+        7215,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 8072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        9800
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 8081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-15"
+      ]
+    },
+    {
+      "id": 8074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        9800
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 8075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        9500
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 8080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 8082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9070,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9080
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_continuity_16.png",
+        "image"
+      ]
+    },
+    {
+      "id": 9071,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        0,
+        10900
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 9083
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9081
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Edit reference 1 (existing story page) for strict spatial continuity using reference 2 (canonical door sheet). Preserve Shir identity, blue eyes, honey-blonde scalp-apex bun, lilac tee, rose shorts, pink black-soled sport sandals, correct pink backpack occlusion, painterly digital drawing style and page composition. Door is ONE honey-oak arched leaf with vertical planks, dark timber frame, ONE aged brass vertical curved C pull near latch edge on each face, not a lever. Street view hinges RIGHT, handle LEFT; garden view hinges LEFT, handle RIGHT. Opens INTO garden only. Door aspect and Shir relative scale match cover/reference; do not make oversized doorway. Street fixtures: intercom LEFT, vent RIGHT, two rectangular sconces. Garden side has NO intercom/vent; do not duplicate street facade fixtures on interior. Keep top 30 percent quiet pale low-detail for HTML reading text, bottom 10 percent expendable ground; feet above bottom band. NO lettering, panels, diagram labels, dragons, visible bell or extra creatures. Render ONE full portrait story page, not reference sheet. Specific shot: Camera INSIDE GARDEN, looking toward street behind Shir. Background gate remains OPEN, hinge jamb LEFT, handle RIGHT free edge. Street beyond gate. Shrink egg to about ONE THIRD of standing Shir height, grounded behind bush, no cracks or hatchling. Keep Shir face, pose and plain bag side.",
+        7216,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 9072,
+      "type": "SaveImage",
+      "pos": [
+        600,
+        10900
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9081
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch01-doorfix-16"
+      ]
+    },
+    {
+      "id": 9074,
+      "type": "LoadImage",
+      "pos": [
+        -800,
+        10900
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9082
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_door_reference.png",
+        "image"
+      ]
+    },
+    {
+      "id": 9075,
+      "type": "BatchImagesNode",
+      "pos": [
+        -300,
+        10600
+      ],
+      "size": [
+        250,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images.image0",
+          "type": "IMAGE",
+          "link": 9080
+        },
+        {
+          "name": "images.image1",
+          "type": "IMAGE",
+          "link": 9082
+        },
+        {
+          "name": "images.image2",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9083
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BatchImagesNode"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      80,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      82,
+      74,
+      0,
+      75,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      75,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      71,
+      0,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      1080,
+      1070,
+      0,
+      1075,
+      0,
+      "IMAGE"
+    ],
+    [
+      1082,
+      1074,
+      0,
+      1075,
+      1,
+      "IMAGE"
+    ],
+    [
+      1083,
+      1075,
+      0,
+      1071,
+      0,
+      "IMAGE"
+    ],
+    [
+      1081,
+      1071,
+      0,
+      1072,
+      0,
+      "IMAGE"
+    ],
+    [
+      2080,
+      2070,
+      0,
+      2075,
+      0,
+      "IMAGE"
+    ],
+    [
+      2082,
+      2074,
+      0,
+      2075,
+      1,
+      "IMAGE"
+    ],
+    [
+      2083,
+      2075,
+      0,
+      2071,
+      0,
+      "IMAGE"
+    ],
+    [
+      2081,
+      2071,
+      0,
+      2072,
+      0,
+      "IMAGE"
+    ],
+    [
+      3080,
+      3070,
+      0,
+      3075,
+      0,
+      "IMAGE"
+    ],
+    [
+      3082,
+      3074,
+      0,
+      3075,
+      1,
+      "IMAGE"
+    ],
+    [
+      3083,
+      3075,
+      0,
+      3071,
+      0,
+      "IMAGE"
+    ],
+    [
+      3081,
+      3071,
+      0,
+      3072,
+      0,
+      "IMAGE"
+    ],
+    [
+      4080,
+      4070,
+      0,
+      4075,
+      0,
+      "IMAGE"
+    ],
+    [
+      4082,
+      4074,
+      0,
+      4075,
+      1,
+      "IMAGE"
+    ],
+    [
+      4083,
+      4075,
+      0,
+      4071,
+      0,
+      "IMAGE"
+    ],
+    [
+      4081,
+      4071,
+      0,
+      4072,
+      0,
+      "IMAGE"
+    ],
+    [
+      5080,
+      5070,
+      0,
+      5075,
+      0,
+      "IMAGE"
+    ],
+    [
+      5082,
+      5074,
+      0,
+      5075,
+      1,
+      "IMAGE"
+    ],
+    [
+      5083,
+      5075,
+      0,
+      5071,
+      0,
+      "IMAGE"
+    ],
+    [
+      5081,
+      5071,
+      0,
+      5072,
+      0,
+      "IMAGE"
+    ],
+    [
+      6080,
+      6070,
+      0,
+      6075,
+      0,
+      "IMAGE"
+    ],
+    [
+      6082,
+      6074,
+      0,
+      6075,
+      1,
+      "IMAGE"
+    ],
+    [
+      6083,
+      6075,
+      0,
+      6071,
+      0,
+      "IMAGE"
+    ],
+    [
+      6081,
+      6071,
+      0,
+      6072,
+      0,
+      "IMAGE"
+    ],
+    [
+      7080,
+      7070,
+      0,
+      7075,
+      0,
+      "IMAGE"
+    ],
+    [
+      7082,
+      7074,
+      0,
+      7075,
+      1,
+      "IMAGE"
+    ],
+    [
+      7083,
+      7075,
+      0,
+      7071,
+      0,
+      "IMAGE"
+    ],
+    [
+      7081,
+      7071,
+      0,
+      7072,
+      0,
+      "IMAGE"
+    ],
+    [
+      8080,
+      8070,
+      0,
+      8075,
+      0,
+      "IMAGE"
+    ],
+    [
+      8082,
+      8074,
+      0,
+      8075,
+      1,
+      "IMAGE"
+    ],
+    [
+      8083,
+      8075,
+      0,
+      8071,
+      0,
+      "IMAGE"
+    ],
+    [
+      8081,
+      8071,
+      0,
+      8072,
+      0,
+      "IMAGE"
+    ],
+    [
+      9080,
+      9070,
+      0,
+      9075,
+      0,
+      "IMAGE"
+    ],
+    [
+      9082,
+      9074,
+      0,
+      9075,
+      1,
+      "IMAGE"
+    ],
+    [
+      9083,
+      9075,
+      0,
+      9071,
+      0,
+      "IMAGE"
+    ],
+    [
+      9081,
+      9071,
+      0,
+      9072,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

@@ -93,14 +93,14 @@
     {
       "page": 13,
       "path": "art/chapter1/page13.webp",
-      "source_render": "ch01-page13-scene-fix_00001_.png",
+      "source_render": "ch01-page14-final-fix_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 14,
       "path": "art/chapter1/page14.webp",
-      "source_render": "ch01-page14-final-fix_00001_.png",
+      "source_render": "ch01-page13-scene-fix_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },

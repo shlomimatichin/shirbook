@@ -100,14 +100,6 @@ Between all these buildings?
 
 ## Page 13
 
-Soft, golden light fills the garden.  
-It shines on the green leaves.  
-There is no sound from the street.
-
-Even the air feels different.
-
-## Page 14
-
 I should go to school.  
 I do not want to be late.  
 I am not allowed to go in here.  
@@ -115,6 +107,14 @@ What if it is not safe?
 
 Just one look…  
 I step inside.
+
+## Page 14
+
+Soft, golden light fills the garden.  
+It shines on the green leaves.  
+There is no sound from the street.
+
+Even the air feels different.
 
 ## Page 15
 
