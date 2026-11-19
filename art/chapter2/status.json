@@ -98,6 +98,72 @@
         1536
       ],
       "path": "art/chapter2/page12.webp"
+    },
+    "14": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page14-full_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page14.webp"
+    },
+    "1": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page01-repair_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page01.webp"
+    },
+    "9": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page09-retry_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page09.webp"
+    },
+    "13": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page13-repair_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page13.webp"
+    },
+    "15": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page15-repair_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page15.webp"
+    },
+    "16": {
+      "status": "agent-reviewed-owner-review-pending",
+      "source": "ch02-page16-repair_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "medium",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "path": "art/chapter2/page16.webp"
     }
   },
   "qa": [
