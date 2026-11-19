@@ -1,0 +1,173 @@
+{
+  "id": "dbffb4db-5f2e-4f34-8ab1-ab9f81d3f912",
+  "revision": 0,
+  "last_node_id": 200,
+  "last_link_id": 200,
+  "nodes": [
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_contact_12.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Make a TINY LOCAL EDIT to ONLY the brass handle in this original image. Absolutely preserve door leaf position on RIGHT side of opening, attached to RIGHT jamb hinges. Do NOT move door to left side. Do NOT move Shir or hands. Existing pull is too close to hinge edge. Erase existing brass pull and replace with plain oak wood. Place a smaller brass vertical curved pull at the OPPOSITE LEFT EDGE OF THAT SAME RIGHT-SIDE WOODEN LEAF, directly beside garden opening. This free edge is partly behind Shir and her backpack: the replacement handle should be largely OCCLUDED by Shir, only a small sliver visible beside her right hip, or completely hidden if correct occlusion demands. Hardware must not be fully visible near hinge jamb. Only remove wrong handle; preserve all other pixels/scene geometry. No new handles elsewhere.",
+        7612,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/contact12-local"
+      ]
+    }
+  ],
+  "links": [
+    [
+      180,
+      170,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

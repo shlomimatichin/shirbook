@@ -79,14 +79,14 @@
     {
       "page": 11,
       "path": "art/chapter1/page11.webp",
-      "source_render": "door-retry-11_00001_.png",
+      "source_render": "contact-fix-11_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
     {
       "page": 12,
       "path": "art/chapter1/page12.webp",
-      "source_render": "ch01-doorfix-12_00001_.png",
+      "source_render": "contact12-local_00001_.png",
       "reviewed_by": "production agent",
       "owner_release_approved": false
     },
