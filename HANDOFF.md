@@ -147,3 +147,5 @@ Owner explicitly approved publishing Chapter 1 from staged 3c0bd32. Release reco
 Latest 2026-11-19: owner authorized sandal wording changes and shared Shir/Skitters scale + interaction reference generation. Show these for owner review BEFORE Chapter 2 page art. Chapter 1 remains published; no Chapter 2 publication authorized.
 
 Shared reference checkpoint 2026-11-19: sandal prose updated on pages4/16. Three review candidates in art/references/review (scale, front-paws contact, seated contact), generated via Comfy Desktop GPT Image2 high. Show owner before Chapter2 page art; no page art generated. Read review/README.md and status.json for provenance, approximate measurements and rejected attempts. Original individual canonical sheets unchanged.
+
+Latest approval 2026-11-19: owner said “yes, looks right, please push.” All three shared scale/interaction references in art/references/review are approved and authorized for the public GitHub repository. Reference review gate satisfied; use them alongside individual identity sheets. No Chapter 2 page art or chapter release in this checkpoint.
