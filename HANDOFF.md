@@ -151,3 +151,5 @@ Shared reference checkpoint 2026-11-19: sandal prose updated on pages4/16. Three
 Latest approval 2026-11-19: owner said “yes, looks right, please push.” All three shared scale/interaction references in art/references/review are approved and authorized for the public GitHub repository. Reference review gate satisfied; use them alongside individual identity sheets. No Chapter 2 page art or chapter release in this checkpoint.
 
 2026-11-19 owner authorized Chapter2 pilot art pages4/8/11 and public staging deployment, then review BEFORE remaining images. Main Chapter2 release not approved.
+
+Chapter2 pilot checkpoint: pages4/8/11 generated, agent-reviewed and integrated at site/staging-chapter2.html; staging chapter selector links both chapters. All16 text pages included; other13 show illustration pending. Selected *-framed renders fix text overlap and phone crop. Await owner pilot review before remaining illustrations. Main reader and published Chapter1 snapshot unchanged.

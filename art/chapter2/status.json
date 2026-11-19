@@ -1,0 +1,32 @@
+{
+  "scope": "Three sample pages only; owner authorized public staging, not main release or remaining art.",
+  "pages": {
+    "4": {
+      "status": "draft-owner-review-pending",
+      "source": "ch02-page04-framed_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "path": "art/chapter2/page04.webp"
+    },
+    "8": {
+      "status": "draft-owner-review-pending",
+      "source": "ch02-page08-framed_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "path": "art/chapter2/page08.webp"
+    },
+    "11": {
+      "status": "draft-owner-review-pending",
+      "source": "ch02-page11-framed_00001_.png",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "path": "art/chapter2/page11.webp"
+    }
+  },
+  "qa": [
+    "Agent inspected all3 framed renders full-size.",
+    "Checked phone views including320 CSSpx and390 CSSpx: framing preserves action and keeps text above characters.",
+    "Sample links and next-page placeholder navigation observed working.",
+    "Published Chapter1 snapshot unchanged."
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "id": "7a6ee393-9132-4ba8-a5f9-6281a3e6b1c5",
+  "revision": 0,
+  "last_node_id": 500,
+  "last_link_id": 500,
+  "nodes": [
+    {
+      "id": 170,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        1000
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            180
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_frame_4.png",
+        "image"
+      ]
+    },
+    {
+      "id": 171,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        1000
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 180
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Reframe this EXACT book illustration for a tall phone with text on top. Preserve both character identities, expressions, all anatomy, poses, clothes, story action, brushwork, garden and their RELATIVE sizes. Treat the entire character/action group as ONE unit: reduce that group uniformly to 78 percent of its current width AND height. Position group lower and centrally so highest hair/bun point is at 36 percent of frame height and lowest feet/tail/action at 86 percent. All character/action details must be within central60percent width (x20 to80percent). EXTEND the existing garden naturally around the smaller group. Top32percent MUST be uninterrupted PALE cream sunlight/mist: no heads, bun, leaves, objects or busy detail. Bottom12percent empty stone path only. Same1696x2528portrait canvas. This is a framing adjustment, not growth or shrinking one character relative to other. Keep original head-to-body ratios. NO text, borders, panels, guide lines or measurements. Preserve both front paws gently on sandal and both hind feet on path, body outside shoe; keep broken eggshell parts behind. All feet below text area and above controls.",
+        9404,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 172,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        1000
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page04-framed"
+      ]
+    },
+    {
+      "id": 270,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        2200
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            280
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_frame_8.png",
+        "image"
+      ]
+    },
+    {
+      "id": 271,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        2200
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 280
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            281
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Reframe this EXACT book illustration for a tall phone with text on top. Preserve both character identities, expressions, all anatomy, poses, clothes, story action, brushwork, garden and their RELATIVE sizes. Treat the entire character/action group as ONE unit: reduce that group uniformly to 78 percent of its current width AND height. Position group lower and centrally so highest hair/bun point is at 36 percent of frame height and lowest feet/tail/action at 86 percent. All character/action details must be within central60percent width (x20 to80percent). EXTEND the existing garden naturally around the smaller group. Top32percent MUST be uninterrupted PALE cream sunlight/mist: no heads, bun, leaves, objects or busy detail. Bottom12percent empty stone path only. Same1696x2528portrait canvas. This is a framing adjustment, not growth or shrinking one character relative to other. Keep original head-to-body ratios. NO text, borders, panels, guide lines or measurements. Keep small sneeze flame reaching single dry leaf and startled Shir. Move whole group inward so dragon tail no longer near right edge; entire tail fully visible within x80percent. Do not enlarge flame or alter body proportions.",
+        9408,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 272,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        2200
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 281
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page08-framed"
+      ]
+    },
+    {
+      "id": 370,
+      "type": "LoadImage",
+      "pos": [
+        200,
+        3400
+      ],
+      "size": [
+        280,
+        364
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            380
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook_ch2_frame_11.png",
+        "image"
+      ]
+    },
+    {
+      "id": 371,
+      "type": "OpenAIGPTImage1",
+      "pos": [
+        1000,
+        3400
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 380
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            381
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenAIGPTImage1"
+      },
+      "widgets_values": [
+        "Reframe this EXACT book illustration for a tall phone with text on top. Preserve both character identities, expressions, all anatomy, poses, clothes, story action, brushwork, garden and their RELATIVE sizes. Treat the entire character/action group as ONE unit: reduce that group uniformly to 78 percent of its current width AND height. Position group lower and centrally so highest hair/bun point is at 36 percent of frame height and lowest feet/tail/action at 86 percent. All character/action details must be within central60percent width (x20 to80percent). EXTEND the existing garden naturally around the smaller group. Top32percent MUST be uninterrupted PALE cream sunlight/mist: no heads, bun, leaves, objects or busy detail. Bottom12percent empty stone path only. Same1696x2528portrait canvas. This is a framing adjustment, not growth or shrinking one character relative to other. Keep original head-to-body ratios. NO text, borders, panels, guide lines or measurements. Preserve solid leaf-green camouflaged hatchling behind leaves, two amber eyes and green tail visible. No turquoise, transparency or ghost effects. Keep Shir looking at him.",
+        9411,
+        "fixed",
+        "high",
+        "opaque",
+        "Custom",
+        1,
+        "gpt-image-2",
+        1696,
+        2528
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 372,
+      "type": "SaveImage",
+      "pos": [
+        1600,
+        3400
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 381
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.56",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "shirbook/ch02-page11-framed"
+      ]
+    }
+  ],
+  "links": [
+    [
+      180,
+      170,
+      0,
+      171,
+      0,
+      "IMAGE"
+    ],
+    [
+      181,
+      171,
+      0,
+      172,
+      0,
+      "IMAGE"
+    ],
+    [
+      280,
+      270,
+      0,
+      271,
+      0,
+      "IMAGE"
+    ],
+    [
+      281,
+      271,
+      0,
+      272,
+      0,
+      "IMAGE"
+    ],
+    [
+      380,
+      370,
+      0,
+      371,
+      0,
+      "IMAGE"
+    ],
+    [
+      381,
+      371,
+      0,
+      372,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5,
+      "offset": [
+        0,
+        800
+      ]
+    }
+  },
+  "version": 0.4
+}

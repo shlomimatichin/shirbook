@@ -9,3 +9,5 @@ Owner authorized generation and public staging publication of these three sample
 | 11 | Camouflage discovery | Shir searches low bush, same-sized solid dragon behind foliage | Leaf-green scales; amber eyes and green tail clues |
 
 Use approved joint scale + interaction reference and separate canonical identities; garden environment from Chapter1 page16 only. Top32% quiet text space; bottom12% empty path; central60% critical action. No gate reference, no transparent dragon, no full-body-on-shoe pose. Matched normal/camouflage colour reference remains a follow-up before full batch if needed; this pilot tests the colour state directly against fixed canonical anatomy.
+
+Phone QA caught initial top-text/bun overlap and sneeze tail outside central crop. Local framing edit keeps the whole character group at one uniform scale and adds pale top space; do not independently resize Skitters to fix layout.
