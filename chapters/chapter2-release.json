@@ -1,0 +1,9 @@
+{
+  "owner_approved": true,
+  "approval_date": "2026-11-19",
+  "staged_commit": "a1424b5",
+  "instruction": "publish the second chapter commit and push",
+  "chapter": 2,
+  "public_path": "site/chapter2.html",
+  "source_staging_sha256": "49331619c6fef185ef49486e76f9534b6f0f7de4fb7db3f77c7d1854ca3f245b"
+}

@@ -163,3 +163,5 @@ Current checkpoint: batchesA/B complete; pages2/3/5/6/7 installed. BatchC submit
 Latest completed Chapter2 draft: all16 pages illustrated; pilots4/8/11 owner-approved, remaining images agent-reviewed pending owner review. Medium1024x1536 used after cost audit; original pages2/3 remain high. Page9 stalled request cancelled and isolated retry succeeded. Backpack/framing repairs selected on1/9/13/14/15/16. Staging only; main release NOT authorized. Short-phone layout keeps full artwork bottom-aligned and text above; main Chapter1 unchanged.
 
 Deployment verified: a1424b5, Pages run44585052928 succeeded. Live staging-chapter2.html has16illustrated pages and16loaded images; live15/16 navigation and390px phone framing observed. Owner review URL https://shlomimatichin.github.io/shirbook/staging-chapter2.html . No main Chapter2 release.
+
+2026-11-19: owner explicitly approved Chapter2 main publication from staged a1424b5. Published chapter2.html with isolated published-chapter2 assets and chapter2 CSS/JS. Main contents now links Chapters1 and2. Release provenance: chapters/chapter2-release.json.

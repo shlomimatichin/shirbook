@@ -34,7 +34,9 @@ for path in SITE.rglob('*.html'):
         if not u.path and u.fragment and u.fragment not in page.ids:errors.append(f'Missing anchor: {link}')
     for img in page.images:
         if not all(img.get(k) for k in ('alt','width','height')):errors.append(f'Image missing alt/dimensions in {path.name}')
-    if path.name=='index.html' and page.chapters!=1:errors.append('Launch must show exactly one chapter card.')
+    if path.name=='index.html':
+        approved=sum(1 for p in (ROOT/'chapters').glob('chapter*-release.json') if json.loads(p.read_text()).get('owner_approved'))
+        if page.chapters!=approved:errors.append('Chapter cards must match approved releases.')
 for f in SITE.rglob('*'):
     if f.is_symlink():errors.append(f'Symlink in public artifact: {f.name}')
     elif f.is_file() and f.suffix.lower() not in ('.html','.css','.js','.webp','.avif','.svg','.ico',''):

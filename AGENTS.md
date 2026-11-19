@@ -49,3 +49,5 @@ Latest approval 2026-11-19: owner said “yes, looks right, please push.” All 
 Latest: owner approved Chapter2 pilots and authorized all remaining13 pages for staging review; commit periodically. Main Chapter2 release still requires explicit approval.
 
 Latest completed Chapter2 draft: all16 pages illustrated; pilots4/8/11 owner-approved, remaining images agent-reviewed pending owner review. Medium1024x1536 used after cost audit; original pages2/3 remain high. Page9 stalled request cancelled and isolated retry succeeded. Backpack/framing repairs selected on1/9/13/14/15/16. Staging only; main release NOT authorized. Short-phone layout keeps full artwork bottom-aligned and text above; main Chapter1 unchanged.
+
+2026-11-19: owner explicitly approved Chapter2 main publication from staged a1424b5. Published chapter2.html with isolated published-chapter2 assets and chapter2 CSS/JS. Main contents now links Chapters1 and2. Release provenance: chapters/chapter2-release.json.
