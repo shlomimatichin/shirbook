@@ -45,3 +45,5 @@ Latest 2026-11-19: owner authorized sandal wording changes and shared Shir/Skitt
 Latest approval 2026-11-19: owner said “yes, looks right, please push.” All three shared scale/interaction references in art/references/review are approved and authorized for the public GitHub repository. Reference review gate satisfied; use them alongside individual identity sheets. No Chapter 2 page art or chapter release in this checkpoint.
 
 2026-11-19 owner authorized Chapter2 pilot art pages4/8/11 and public staging deployment, then review BEFORE remaining images. Main Chapter2 release not approved.
+
+Latest: owner approved Chapter2 pilots and authorized all remaining13 pages for staging review; commit periodically. Main Chapter2 release still requires explicit approval.
