@@ -143,3 +143,5 @@ Contact correction completed: page11 selected contact-fix-11 (Shir in front of n
 
 ## Latest owner instructions — 2026-11-19
 Owner explicitly approved publishing Chapter 1 from staged 3c0bd32. Release recorded in chapters/chapter1-release.json; production chapter1.html uses isolated assets/published-chapter1 and separate CSS/JS snapshots, so later staging edits cannot mutate released content. Chapter2.md saved exactly from accepted 16-page draft, text-only: NO art generation yet. Future camouflage/caretaker rules saved in chapters/story-continuity.md. New researched consistency workflow linked from production skill. Next creative step is discuss sandal wording / authorize joint scale and interaction references, not automatically generate Chapter2 art.
+
+Latest 2026-11-19: owner authorized sandal wording changes and shared Shir/Skitters scale + interaction reference generation. Show these for owner review BEFORE Chapter 2 page art. Chapter 1 remains published; no Chapter 2 publication authorized.

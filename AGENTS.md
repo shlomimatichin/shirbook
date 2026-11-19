@@ -39,3 +39,5 @@ Latest owner review: middle side-profile reference head remains too large; reduc
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
 
 Latest release state (supersedes prior Chapter1 pending notes): owner approved staged 3c0bd32 for main publication on 2026-11-19. Chapter1 is now published with isolated assets; chapter2.md is saved text-only, with no art generation yet authorized. Use chapters/story-continuity.md and production skill references/consistency-workflow.md for subsequent chapters.
+
+Latest 2026-11-19: owner authorized sandal wording changes and shared Shir/Skitters scale + interaction reference generation. Show these for owner review BEFORE Chapter 2 page art. Chapter 1 remains published; no Chapter 2 publication authorized.

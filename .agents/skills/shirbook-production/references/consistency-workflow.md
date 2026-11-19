@@ -16,7 +16,7 @@ Inspected local `comfy_api_nodes/nodes_openai.py` on 2026-11-19. Existing workfl
 ## Project workflow (our synthesis, not vendor guarantees)
 
 ### Before the next art generation
-- Preserve the no-art hold until owner authorizes Chapter 2 art. Prepare only written specifications now.
+- Owner authorized shared scale and sandal-interaction references on 2026-11-19. Show these for review before any Chapter 2 page art.
 - Create one SHARED scale plate when authorized: Shir and hatchling on the same ground line, same depth, neutral side/front views, feet fully visible, no perspective enlargement. Add the egg and sandal as scale anchors. Keep the hatchling large enough to inspect; use separate detail crops for identity rather than shrinking the whole cast into a crowded sheet.
 - Retain individual canonical Shir and hatchling references. Use only hatchling stage for Chapter 2, never all four dragon ages as a scene input. Later growth requires an explicit stage change and new joint plate with the SAME Shir scale.
 - Establish interaction references: hatchling beside ankle, front paws resting on sandal with hind feet on ground, seated beside foot with partial contact, cradled in arms if later story calls for it. No full dragon balanced inside/on top of one shoe at current dimensions.
@@ -39,7 +39,7 @@ Compare ratios only when subjects stand at similar depth on the same plane. For 
 8. Staging review remains mandatory before main publication; user explicitly approves the staged version. Keep published chapter assets isolated from staging so draft edits cannot silently alter released chapters.
 
 ## Chapter 2 prose/pose issue
-Accepted lines “He climbs onto my sandal” and “He sits on my sandal” can incorrectly imply a shoe-sized dragon. Preserve accepted prose in chapter2.md for now; propose “He puts his little feet on my sandal” / “He sits with one foot on my sandal” before art. If unchanged, show PARTIAL contact with the rest of his body supported by ground. The story beat is attachment/obstruction, not miniaturization.
+Owner approved clearer wording on 2026-11-19: “He puts his little feet on my sandal” / “He sits with one foot on my sandal.” Show PARTIAL contact with the rest of his body supported by ground. The story beat is attachment/obstruction, not miniaturization.
 
 ## What this improves
 Shared scale + explicit blocking + early hard pilots should catch errors before expensive full-page production. References improve consistency but cannot guarantee it; human/agent visual checks remain essential. Previous mistakes came from accepting attractive images without checking geometry, not merely from weak prompt adjectives.

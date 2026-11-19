@@ -1,6 +1,6 @@
 # Chapter 2: I Am Not Your Mama!
 
-Status: owner accepted draft on 2026-11-19. Text only; no art generation authorized yet. Not approved for publication.
+Status: owner accepted draft on 2026-11-19. Shared scale and sandal-interaction references authorized on 2026-11-19; page art awaits owner review of those references. Not approved for publication.
 
 ## Page 1
 
@@ -33,7 +33,7 @@ I look at him.
 “I am nine!”  
 “I am not your mama.”
 
-He climbs onto my sandal.
+He puts his little feet on my sandal.
 
 ## Page 5
 
@@ -146,7 +146,7 @@ He steps out too.
 
 “You cannot come to school.”
 
-He sits on my sandal.
+He sits with one foot on my sandal.
 
 “Mama.”
 
@@ -156,4 +156,4 @@ Oh, no.
 
 ## Production notes (not reader text)
 
-See `story-continuity.md` for camouflage, caretaker and future-story decisions. See `../art/scale-guide.md` for hatchling dimensions. Sandal wording must not shrink him to shoe size: partial weight/contact only, remaining body supported on ground. Before illustration, consider clearer wording “He puts his little feet on my sandal” / “He sits with one foot on my sandal”; these alternatives are proposed, not applied to accepted prose. No Chapter 2 art yet.
+See `story-continuity.md` for camouflage, caretaker and future-story decisions. See `../art/scale-guide.md` for hatchling dimensions. Sandal wording must not shrink him to shoe size: partial weight/contact only, remaining body supported on ground. Owner authorized the clearer sandal wording on 2026-11-19. Front feet may rest on the sandal while hind feet stay on the ground; seated pose has one front foot on the sandal and body on the ground. Reference review precedes Chapter 2 page art.
