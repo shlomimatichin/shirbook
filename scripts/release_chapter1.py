@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Snapshot explicitly owner-approved Chapter 1, isolated from future staging edits."""
 from pathlib import Path
-import shutil,re,json
+import shutil,re,json,hashlib
 r=Path(__file__).resolve().parents[1];site=r/'site'
 approval=json.loads((r/'chapters/chapter1-release.json').read_text())
 assert approval['owner_approved'] and approval['staged_commit']=='3c0bd32'
 s=(site/'staging.html').read_text()
+assert hashlib.sha256(s.encode()).hexdigest()==approval['source_staging_sha256'], 'Staging changed: renewed owner release approval required'
 assert s.count('data-state="illustrated"')==16
 folder=site/'assets/published-chapter1';folder.mkdir(exist_ok=True)
 for p in (site/'assets').glob('chapter1-*.webp'):shutil.copy2(p,folder/p.name)

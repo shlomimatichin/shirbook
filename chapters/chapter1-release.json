@@ -1,1 +1,9 @@
-{"owner_approved":true,"approval_date":"2026-11-19","staged_commit":"3c0bd32","instruction":"publish chapter one to non staging","chapter":1,"public_path":"site/chapter1.html"}
+{
+  "owner_approved": true,
+  "approval_date": "2026-11-19",
+  "staged_commit": "3c0bd32",
+  "instruction": "publish chapter one to non staging",
+  "chapter": 1,
+  "public_path": "site/chapter1.html",
+  "source_staging_sha256": "f1cd52cc321648a3172ce283966ecd965a581516cfed837fe0e09a9be5954d7c"
+}

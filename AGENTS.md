@@ -37,3 +37,5 @@ Latest owner review: middle side-profile reference head remains too large; reduc
 5. Material changes to chapter content or art after approval require staging and renewed owner release approval. Keep the main book placeholder until the gate is satisfied.
 
 Routine commits, pushes and staging deployments remain authorized and do not require repeated permission. This owner instruction supersedes earlier “publish when ready” wording. Current Chapter 1 is NOT approved for publication.
+
+Latest release state (supersedes prior Chapter1 pending notes): owner approved staged 3c0bd32 for main publication on 2026-11-19. Chapter1 is now published with isolated assets; chapter2.md is saved text-only, with no art generation yet authorized. Use chapters/story-continuity.md and production skill references/consistency-workflow.md for subsequent chapters.
